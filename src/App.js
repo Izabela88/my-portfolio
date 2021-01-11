@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import Home from './components/Home';
-import About from './components/About';
-import SinglePost from './components/SinglePost';
-import Post from './components/Post';
-import Project from './components/Project';
+import Home from './components/Home/Home';
+import About from './components/About/About';
+import SinglePost from './components/SinglePost/SinglePost';
+import Post from './components/Post/Post';
+import Project from './components/Project/Project';
 
 class App extends Component {
   render() {
