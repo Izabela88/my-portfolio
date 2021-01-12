@@ -5,7 +5,7 @@ import Home from './components/Home/Home';
 import About from './components/About/About';
 import SinglePost from './components/SinglePost/SinglePost';
 import Post from './components/Post/Post';
-import Projects from './components/Project/Project';
+import Projects from './components/Project/Projects';
 import Layout from './components/Layout/Layout';
 
 class App extends Component {
@@ -13,12 +13,12 @@ class App extends Component {
     return (
       <div>
         <Layout>
+          <Home />
+          <About />
+          <Projects />
           <Switch>
-            <Route component={Home} path='/' exact />
-            <Route component={About} path='/about' />
             <Route component={SinglePost} path='/post/:slug' />
             <Route component={Post} path='/post' />
-            <Route component={Projects} path='/projects' />
           </Switch>
         </Layout>
       </div>

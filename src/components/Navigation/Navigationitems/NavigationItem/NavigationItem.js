@@ -1,17 +1,19 @@
 import React from 'react';
 import classes from './NawigationItem.module.css';
-import { NavLink } from 'react-router-dom';
+import { Link } from 'react-scroll';
 
 const navigationItem = (props) => (
-  <li className={classes.NavigationItem}>
-    <NavLink
-      to={props.link}
-      exact={props.exact}
-      activeClassName={classes.active}
+  <div className={classes.NavigationItem}>
+    <Link
+      activeClass='active'
+      to={props.id}
+      spy={true}
+      smooth={true}
+      duration={1000}
     >
       {props.children}
-    </NavLink>
-  </li>
+    </Link>
+  </div>
 );
 
 export default navigationItem;

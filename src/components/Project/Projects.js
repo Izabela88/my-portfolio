@@ -1,10 +1,11 @@
 import React, { Component } from 'react';
+import classes from './Projects.module.css';
 
 class Project extends Component {
   render() {
     return (
-      <div>
-        <h1>Project</h1>
+      <div className={classes.Projects} id='projects'>
+        <h1>Projects</h1>
       </div>
     );
   }
