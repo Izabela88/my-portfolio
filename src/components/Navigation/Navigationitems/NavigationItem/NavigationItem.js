@@ -9,7 +9,7 @@ const navigationItem = (props) => (
       to={props.id}
       spy={true}
       smooth={true}
-      offset={-70}
+      offset={-100}
       duration={1000}
     >
       {props.children}
