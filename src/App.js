@@ -7,6 +7,7 @@ import SinglePost from './components/SinglePost/SinglePost';
 import Post from './components/Post/Post';
 import Projects from './components/Project/Projects';
 import Layout from './components/Layout/Layout';
+import Contact from './components/Contact/Contact';
 
 class App extends Component {
   render() {
@@ -16,6 +17,7 @@ class App extends Component {
           <Home />
           <About />
           <Projects />
+          <Contact />
           <Switch>
             <Route component={SinglePost} path='/post/:slug' />
             <Route component={Post} path='/post' />
