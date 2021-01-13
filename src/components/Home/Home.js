@@ -1,11 +1,12 @@
 import React, { Component } from 'react';
 import classes from './Home.module.css';
+import img1 from '../../assets/images/img1.jpg';
 
 class Home extends Component {
   render() {
     return (
       <div className={classes.Home} id='home'>
-        <h1>Home</h1>
+        <img src={img1} alt='home' />
       </div>
     );
   }
