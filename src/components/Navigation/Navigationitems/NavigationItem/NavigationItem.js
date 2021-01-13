@@ -5,10 +5,11 @@ import { Link } from 'react-scroll';
 const navigationItem = (props) => (
   <div className={classes.NavigationItem}>
     <Link
-      activeClass='active'
+      activeClass={classes.active}
       to={props.id}
       spy={true}
       smooth={true}
+      offset={-110}
       duration={1000}
     >
       {props.children}
