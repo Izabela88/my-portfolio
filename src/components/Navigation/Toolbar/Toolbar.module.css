@@ -4,13 +4,14 @@
   position: fixed;
   top: 0;
   left: 0;
-  background-color: #dddfd4;
+  background-color: #bfbfc1;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 0 20px;
   box-sizing: border-box;
   z-index: 90;
+  box-shadow: 0px 2px 14px 0px #181617;
 }
 
 .Toolbar nav {
