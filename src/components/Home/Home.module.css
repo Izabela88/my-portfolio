@@ -86,3 +86,33 @@
   transition: all 0.4s ease 0s;
   border: none;
 }
+
+@media (max-width: 499px) {
+  .MainText {
+    margin: auto;
+    width: 360px;
+    left: auto;
+    border: 1px solid #dcdfea;
+    padding: 0;
+  }
+
+  .MainText h1 {
+    font-size: 25px;
+  }
+  .MainText p {
+    font-size: 25px;
+  }
+
+  .MainImage1 {
+    display: none;
+  }
+
+  .MainSideText {
+    display: none;
+  }
+
+  .MainButton {
+    margin: auto;
+    left: auto;
+  }
+}
