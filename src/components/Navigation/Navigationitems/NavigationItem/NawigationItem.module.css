@@ -30,13 +30,13 @@
   .NavigationItem a {
     color: #181617;
     height: 100%;
-    padding: 10px 0px;
+    padding: 10px 20px;
   }
 
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active {
-    border-bottom: solid 1px #8c6850;
-    color: #8c6850;
+    border-bottom: solid 1px #ffb3a4;
+    color: #ffb3a4;
   }
 }
