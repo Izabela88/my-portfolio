@@ -16,7 +16,7 @@
 
 .MainImage {
   position: relative;
-  top: -43%;
+  top: -62%;
   display: block;
   width: 100%;
   box-shadow: 0px 2px 14px 0px #8c6850;
@@ -32,21 +32,24 @@
 
 .MainText {
   position: absolute;
-  left: 45%;
-  padding: 30px 20px;
+  left: 49%;
+  top: 37%;
+  padding: 30px 33px;
   width: 580px;
-  text-align: center;
+  text-align: left;
 }
 
 .MainText h1 {
-  font-size: 60px;
+  font-size: 36px;
   font-family: 'Dancing Script';
   color: #dcdfea;
 }
 
 .MainText p {
-  font-size: 40px;
-  font-family: 'Dancing Script';
+  line-height: 32px;
+
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
   color: #dcdfea;
 }
 
@@ -63,8 +66,8 @@
 
 .MainButton {
   position: absolute;
-  left: 62%;
-  top: 67%;
+  left: 67%;
+  top: 71%;
   color: #dcdfea;
   font-weight: bold;
   text-transform: uppercase;
@@ -77,7 +80,6 @@
   border: none;
   transition: all 0.3s ease 0s;
   width: 180px;
-  border: 1px solid #dcdfea;
 }
 
 .MainButton:hover {
@@ -89,18 +91,22 @@
 
 @media (max-width: 499px) {
   .MainText {
-    margin: auto;
-    width: 360px;
+    width: 270px;
     left: auto;
     border: 1px solid #dcdfea;
-    padding: 0;
+    top: 20%;
+    margin: auto;
+  }
+
+  .MainImage {
+    top: -43%;
   }
 
   .MainText h1 {
     font-size: 25px;
   }
   .MainText p {
-    font-size: 25px;
+    font-size: 14px;
   }
 
   .MainImage1 {
@@ -112,7 +118,7 @@
   }
 
   .MainButton {
-    margin: auto;
+    margin-top: 10%;
     left: auto;
   }
 }
