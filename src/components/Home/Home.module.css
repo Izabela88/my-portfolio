@@ -33,10 +33,11 @@
 
 .MainText {
   position: absolute;
+  letter-spacing: 1px;
   left: 50%;
   top: 28%;
-  padding: 60px 43px;
-  width: 475px;
+  padding: 50px 43px;
+  width: 485px;
   height: 272px;
   text-align: left;
   background-color: #181617;
@@ -44,8 +45,8 @@
 }
 
 .MainText h1 {
-  font-size: 32px;
-  font-family: 'Dancing Script';
+  font-size: 30px;
+  font-family: 'Indie Flower', cursive, sans-serif;
   color: #dcdfea;
 }
 
@@ -58,7 +59,7 @@
 
 .MainSideText {
   position: absolute;
-  font-family: 'Dancing Script';
+  font-family: 'Indie Flower', cursive, sans-serif;
   font-size: 26px;
   transform: rotate(-17deg);
   right: 62%;
@@ -72,7 +73,6 @@
   left: 65%;
   top: 70%;
   color: #dcdfea;
-  font-weight: bold;
   text-transform: uppercase;
   text-decoration: none;
   letter-spacing: 1px;
@@ -107,10 +107,10 @@
   }
 
   .MainText h1 {
-    font-size: 25px;
+    font-size: 21px;
   }
   .MainText p {
-    font-size: 14px;
+    font-size: 13px;
   }
 
   .MainImage1 {
