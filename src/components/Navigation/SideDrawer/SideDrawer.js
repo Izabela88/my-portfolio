@@ -13,10 +13,10 @@ class SideDrawer extends Component {
     return (
       <Auxiliary>
         <div className={attachedClasses.join(' ')}>
+          <CloseButton clicked={this.props.closed} />
           <nav>
             <NavigationItems />
           </nav>
-          <CloseButton clicked={this.props.closed} />
         </div>
       </Auxiliary>
     );

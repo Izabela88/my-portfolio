@@ -1,8 +1,15 @@
 import React from 'react';
+import classes from './CloseButton.module.css';
+import img from '../../../../assets/images/close.png';
 
 const closeButton = (props) => (
   <div>
-    <button onClick={props.clicked}>Close</button>
+    <img
+      className={classes.CloseButton}
+      onClick={props.clicked}
+      src={img}
+      alt=''
+    />
   </div>
 );
 
