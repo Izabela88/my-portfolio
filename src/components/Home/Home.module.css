@@ -97,7 +97,7 @@
   .MainText {
     width: 270px;
     left: auto;
-    border: 1px solid #dcdfea;
+    height: auto;
     top: 20%;
     margin: auto;
   }

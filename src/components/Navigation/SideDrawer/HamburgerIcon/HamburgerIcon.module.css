@@ -13,7 +13,7 @@
 .HamburgerIcon div {
   width: 90%;
   height: 3px;
-  background-color: white;
+  background-color: #ffb3a4;
 }
 
 @media (min-width: 500px) {
