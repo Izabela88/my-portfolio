@@ -1,3 +1,66 @@
 .About {
+  position: relative;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #181617;
+  max-width: 1300px;
+  margin: auto;
+  box-shadow: 0px 5px 70px 3px rgba(255, 179, 164, 0.57);
+}
+
+.AboutImg {
+  display: block;
+  border-top: 1px solid #ffb3a4;
+  height: 63vh;
+  width: 80%;
+  top: -171px;
+  position: relative;
+  box-shadow: 0px 5px 70px 3px rgba(255, 179, 164, 0.57);
+}
+
+.AboutText {
+  position: absolute;
+  color: #dcdfea;
+  width: 320px;
+  line-height: 20px;
+  letter-spacing: 1px;
+  left: 165px;
+  margin-bottom: 380px;
+}
+
+.AboutText h1 {
+  font-family: 'Indie Flower', cursive, sans-serif;
+  font-size: 39px;
+}
+
+.AboutText p {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 11px;
+}
+
+.AboutButton {
+  position: absolute;
+  margin-left: 0;
+  margin-top: 120px;
+  color: #dcdfea;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 1px;
+  background: transparent;
+  padding: 20px;
+  cursor: pointer;
+  display: inline-block;
+  border: none;
+  transition: all 0.3s ease 0s;
+  width: 180px;
+  box-shadow: 0px 5px 105px 3px rgb(255, 179, 164, 0.57);
+}
+
+.AboutButton:hover {
+  text-shadow: 0px 0px 7px rgba(255, 179, 164, 1);
+  box-shadow: 0px 5px 70px 3px rgba(255, 179, 164, 0.57);
+  transition: all 0.4s ease 0s;
+  border: none;
 }

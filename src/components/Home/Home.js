@@ -11,7 +11,7 @@ class Home extends Component {
         <img className={classes.MainImage1} src={img1} alt='' />
         <section className={classes.MainText}>
           <h1>
-            Hello ! My name is Izabela ! <br /> I'm Frontend Developer .
+            Hello ! My name is Izabela . <br /> I'm Frontend Developer .
           </h1>
           <p>
             Welcome on my board ! <br /> I'm so glad you are here ! I hope you
