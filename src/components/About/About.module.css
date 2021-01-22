@@ -14,8 +14,8 @@
   display: block;
   border-top: 1px solid #ffb3a4;
   height: 63vh;
-  width: 80%;
-  top: -171px;
+  width: 960px;
+  top: -160px;
   position: relative;
   box-shadow: 0px 5px 70px 3px rgba(255, 179, 164, 0.57);
 }
@@ -23,7 +23,7 @@
 .AboutText {
   position: absolute;
   color: #dcdfea;
-  width: 320px;
+  width: 367px;
   line-height: 20px;
   letter-spacing: 1px;
   left: 165px;
@@ -63,4 +63,10 @@
   box-shadow: 0px 5px 70px 3px rgba(255, 179, 164, 0.57);
   transition: all 0.4s ease 0s;
   border: none;
+}
+
+.Progressbar {
+  position: absolute;
+  width: 800px;
+  top: 620px;
 }

@@ -1,0 +1,12 @@
+.ProgressbarClass {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.ProgressbarBox {
+  margin-left: 145px;
+  margin-right: 133px;
+}
