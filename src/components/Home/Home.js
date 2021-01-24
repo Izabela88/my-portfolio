@@ -1,31 +1,26 @@
 import React, { Component } from 'react';
 import classes from './Home.module.css';
-import img3 from '../../assets/images/img3.jpg';
-import img1 from '../../assets/images/img7.jpg';
+import img from '../../assets/images/imgbg.jpeg';
 
 class Home extends Component {
   render() {
     return (
       <main className={classes.Home} id='home'>
-        <img className={classes.MainImage} src={img3} alt='' />
-        <img className={classes.MainImage1} src={img1} alt='' />
+        <img className={classes.MainImage} src={img} alt='' />
         <section className={classes.MainText}>
-          <h1>
-            Hello ! My name is Izabela . <br /> I'm Frontend Developer .
-          </h1>
-          <p>
-            Welcome on my board ! <br /> I'm so glad you are here ! I hope you
-            will enjoy exploring my portfolio website . Have fun ! :)
-            <br /> <br />
-            And now, let's see what we've got here...
-          </p>
+          <div className={classes.BoxOne}>
+            <h1>
+              I'm <br /> Izabela. <br />
+            </h1>
+            <h5>Junior Frontend Developer.</h5>
+          </div>
+          <div className={classes.BoxTwo}>
+            <p>
+              This is my portfolio website. <br /> And now, let's see what we've
+              got here...
+            </p>
+          </div>
         </section>
-        <section className={classes.MainSideText}>
-          <p>
-            We' ve got some work to do... <hr />
-          </p>
-        </section>
-        <button className={classes.MainButton}>About Me</button>
       </main>
     );
   }

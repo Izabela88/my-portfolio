@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import classes from './About.module.css';
-import imgAbout from '../../assets/images/img-about.jpeg';
-import Progressbar from '../UI/Progressbar/Progressbar';
+import imgAbout from '../../assets/images/2.jpg';
 
 class About extends Component {
   render() {
@@ -28,9 +27,6 @@ class About extends Component {
           </p>
         </div>
         <button className={classes.AboutButton}>My CV</button>
-        <div className={classes.Progressbar}>
-          <Progressbar />
-        </div>
       </div>
     );
   }
