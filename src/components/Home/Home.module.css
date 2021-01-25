@@ -24,13 +24,14 @@
   position: absolute;
   letter-spacing: 1px;
   border: 8px solid #ff4046;
-  left: 18%;
+  left: 25%;
   bottom: 43%;
   width: 323px;
 }
 
 .MainText h1 {
   font-size: 75px;
+  line-height: 66px;
   color: #fff;
   position: relative;
   z-index: 80;
