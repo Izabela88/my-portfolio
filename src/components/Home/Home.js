@@ -12,7 +12,7 @@ class Home extends Component {
             <h1>
               I'm <br /> Izabela. <br />
             </h1>
-            <h5>Junior Frontend Developer.</h5>
+            <h5>Junior Frontend Developer</h5>
           </div>
           <div className={classes.BoxTwo}>
             <p>

@@ -32,12 +32,12 @@
     color: #181617;
     height: 100%;
     padding: 10px 20px;
+    font-weight: bold;
   }
 
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active {
-    border-bottom: solid 1px #ff4046;
     color: #ff4046;
   }
 }
