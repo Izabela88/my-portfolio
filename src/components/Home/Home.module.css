@@ -4,7 +4,6 @@
   display: flex;
   background-color: #ffbe2d;
   position: relative;
-  max-width: 1300px;
   margin: auto;
   font-family: 'Montserrat', sans-serif;
 
@@ -30,11 +29,15 @@
 }
 
 .MainText h1 {
-  font-size: 75px;
-  line-height: 66px;
+  font-size: 80px;
+  line-height: 72px;
   color: #fff;
   position: relative;
   z-index: 80;
+}
+
+.Span {
+  color: #1d2228;
 }
 
 .MainText h5 {
@@ -43,6 +46,7 @@
   color: #fff;
   position: relative;
   z-index: 80;
+  margin-left: 6px;
 }
 
 .BoxOne {
@@ -95,35 +99,4 @@
 }
 
 @media (max-width: 499px) {
-  .MainText {
-    width: 270px;
-    left: auto;
-    height: auto;
-    top: 20%;
-    margin: auto;
-  }
-
-  .MainImage {
-    top: -43%;
-  }
-
-  .MainText h1 {
-    font-size: 21px;
-  }
-  .MainText p {
-    font-size: 13px;
-  }
-
-  .MainImage1 {
-    display: none;
-  }
-
-  .MainSideText {
-    display: none;
-  }
-
-  .MainButton {
-    margin-top: 10%;
-    left: auto;
-  }
 }

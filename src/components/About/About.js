@@ -22,9 +22,9 @@ class About extends Component {
               and since then I am sure that this is what I want to do in my
               life. I mainly focus on the frontend: JavaScript, React.js, CSS,
               because I have an artistic soul and thanks to this activity I can
-              use my creativity. So far, I study alone at home, but my dream and
-              main goal is to find a job in a company where I could become a
-              part of a professional team and build a long-term career. <br />
+              use my creativity. I'm self-taught, but my dream and main goal is
+              to find a job in a company where I could become a part of a
+              professional team and build a long-term career. <br />
               <br /> I am a determined person who likes challenges and I always
               give 200% of myself to achieve the intended goal.
             </p>
