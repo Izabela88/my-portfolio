@@ -1,11 +1,9 @@
 import React, { Component } from 'react';
 
-import { Route, Switch } from 'react-router-dom';
+// import { Route, Switch } from 'react-router-dom';
 import Home from './components/Home/Home';
 import About from './components/About/About';
-import SinglePost from './components/SinglePost/SinglePost';
-import Post from './components/Post/Post';
-import Projects from './components/Project/Projects';
+import Projects from './components/Projects/Projects';
 import Layout from './components/Layout/Layout';
 import Contact from './components/Contact/Contact';
 
@@ -18,10 +16,6 @@ class App extends Component {
           <About />
           <Projects />
           <Contact />
-          <Switch>
-            <Route component={SinglePost} path='/post/:slug' />
-            <Route component={Post} path='/post' />
-          </Switch>
         </Layout>
       </div>
     );
