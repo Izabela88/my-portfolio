@@ -31,48 +31,44 @@ function Project() {
   return (
     <main className={classes.MainProjects} id='projects'>
       <section className={classes.SectionProjects}>
-        <h1 className={classes.MainHeader}>My Projects</h1>
-        <h2 className={classes.SecondHeader}>Welcome to my projects page!</h2>
+        <div className={classes.MainHeader}>
+          <h1>my projects.</h1>
+        </div>
 
-        <section className={classes.BoxProject}>
+        <section className={classes.Items}>
           {projectData &&
             projectData.map((project, index) => (
-              <div className={classes.BoxArticle}>
-                <div className={classes.BoxItem}>
+              <div className={classes.Item}>
+                <div className={classes.ItemImage}>
                   <img
-                    className={classes.PageImg}
+                    className={classes.BoxImg}
                     src={project.mainImage.asset.url}
                     alt={project.mainImage.alt}
                   />
-                  <h3>
-                    <a
-                      href={project.link}
-                      alt={project.title}
-                      target='_blank'
-                      rel='noopener noreferrer'
-                    >
-                      {project.title}
-                    </a>
-                  </h3>
+                </div>
 
-                  <div>
-                    <span>
-                      <strong>Finished on</strong>:{' '}
+                <div className={classes.ItemText}>
+                  <div className={classes.TextWrap}>
+                    <h3 className={classes.TextTitle}>
+                      <p>{project.title}</p>
+                    </h3>
+                    {/* <p>
+                      <strong>Finished on:</strong>{' '}
                       {new Date(project.date).toLocaleDateString()}
-                    </span>
-                    <span>
+                    </p> */}
+                    {/* <p>
                       <strong>Company</strong>: {project.place}
-                    </span>
-                    <span>
-                      <strong>Type</strong>: {project.projectType}
-                    </span>
+                    </p> */}
+                    {/* <p>
+                      <strong>Type:</strong> {project.projectType}
+                    </p> */}
                     <p>{project.description}</p>
                     <a
                       href={project.link}
                       target='_blank'
                       rel='noopener noreferrer'
                     >
-                      Viev The Project <span>GO!</span>
+                      View The Project
                     </a>
                   </div>
                 </div>

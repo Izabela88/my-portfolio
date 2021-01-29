@@ -32,9 +32,9 @@
 }
 
 .AboutText h1 {
+  transform: rotate(-90deg);
   font-family: 'Montserrat', sans-serif;
   font-size: 135px;
-  transform: rotate(-90deg);
   color: rgb(253, 187, 45, 0.1);
 }
 

@@ -19,7 +19,7 @@ class Home extends Component {
           </div>
           <div className={classes.BoxTwo}>
             <p>
-              Welcome on my portfolio website. <br /> Let's see what we've got
+              Welcome to my portfolio website. <br /> Let's see what we've got
               here...
             </p>
           </div>
