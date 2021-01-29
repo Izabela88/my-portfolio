@@ -21,7 +21,7 @@
   font-size: 187px;
   letter-spacing: 1px;
   margin: auto;
-  color: rgb(29 34 40 / 30%);
+  color: rgb(255 64 70 / 35%);
 }
 
 .Items {
@@ -37,7 +37,7 @@
 .Item {
   position: relative;
   overflow: hidden;
-  background-color: #1d2228;
+  background-color: #ff4046;
 }
 
 .Item::after {
@@ -121,7 +121,7 @@
 }
 
 .TextWrap a:hover {
-  color: #ff4046;
+  color: #1d2228;
 }
 
 .TextTitle {
