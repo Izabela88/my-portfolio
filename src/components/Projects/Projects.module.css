@@ -1,5 +1,5 @@
 .MainProjects {
-  background-color: #fff;
+  background-color: #ffbe2d;
   margin: auto;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
@@ -21,7 +21,7 @@
   font-size: 187px;
   letter-spacing: 1px;
   margin: auto;
-  color: rgb(255 190 45 / 22%);
+  color: rgb(29 34 40 / 30%);
 }
 
 .Items {
@@ -37,7 +37,7 @@
 .Item {
   position: relative;
   overflow: hidden;
-  background-color: #ffbe2d;
+  background-color: #1d2228;
 }
 
 .Item::after {
@@ -100,7 +100,7 @@
   opacity: 0;
   text-align: center;
   z-index: 1;
-  color: #1d2228;
+  color: #ffbe2d;
   transform: translateY(-20%);
   transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
     transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
@@ -116,7 +116,7 @@
 
 .TextWrap a {
   text-decoration: none;
-  color: #1d2228;
+  color: #ffbe2d;
   font-weight: bold;
 }
 
