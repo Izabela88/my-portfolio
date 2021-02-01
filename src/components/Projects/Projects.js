@@ -1,6 +1,9 @@
 import React, { useEffect, useState } from 'react';
 import classes from './Projects.module.css';
 import sanityClient from '../../client.js';
+import img2 from '../../assets/images/img2.jpg';
+import img3 from '../../assets/images/img3.jpg';
+import img5 from '../../assets/images/img5.jpg';
 
 function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -74,6 +77,38 @@ function Project() {
                 </div>
               </div>
             ))}
+          <div className={classes.Item}>
+            <div className={classes.ItemImage}>
+              <img src={img2} alt='' />
+            </div>
+            <div className={classes.ItemText}>
+              <div className={classes.TextWrap}>
+                <h3 className={classes.TextTitle}>UI / UX</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className={classes.Item}>
+            <div className={classes.ItemImage}>
+              <img src={img3} alt='' />
+            </div>
+            <div className={classes.ItemText}>
+              <div className={classes.TextWrap}>
+                <h3 className={classes.TextTitle}> WEB DESIGN</h3>
+              </div>
+            </div>
+          </div>
+
+          <div className={classes.Item}>
+            <div className={classes.ItemImage}>
+              <img src={img5} alt='' />
+            </div>
+            <div className={classes.ItemText}>
+              <div className={classes.TextWrap}>
+                <h3 className={classes.TextTitle}>CREATIVITY</h3>
+              </div>
+            </div>
+          </div>
         </section>
       </section>
     </main>

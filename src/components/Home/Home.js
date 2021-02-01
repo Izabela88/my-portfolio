@@ -7,7 +7,9 @@ class Home extends Component {
   render() {
     return (
       <main className={classes.Home} id='home'>
-        <img className={classes.MainImage} src={img} alt='' />
+        <div className={classes.MainImage}>
+          <img src={img} alt='' />
+        </div>
         <section className={classes.MainText}>
           <div className={classes.BoxOne}>
             <h1>

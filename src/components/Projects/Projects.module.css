@@ -9,6 +9,7 @@
   margin: auto;
   max-width: 1300px;
   position: relative;
+  padding: 0 40px;
 }
 
 .MainHeader {
@@ -20,7 +21,7 @@
 .MainHeader h1 {
   font-size: 187px;
   letter-spacing: 1px;
-  margin: auto;
+  margin: 2% auto;
   color: rgb(255 64 70 / 35%);
 }
 
@@ -88,11 +89,11 @@
   width: auto;
   height: 100%;
   line-height: 0;
+  filter: brightness(95%);
 }
 
 .ItemText {
   position: absolute;
-
   top: 0;
   left: 0;
   bottom: 0;
@@ -126,6 +127,7 @@
 
 .TextTitle {
   font-size: 2rem;
+  letter-spacing: 2px;
   padding: 0 1rem;
   margin: 5px 0 0 0;
   font-family: 'Indie Flower', cursive;
