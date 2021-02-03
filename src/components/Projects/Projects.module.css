@@ -1,8 +1,9 @@
 .MainProjects {
-  background-color: #ffbe2d;
+  background-color: #151515;
   margin: auto;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
+  z-index: 3;
 }
 
 .SectionProjects {

@@ -41,7 +41,7 @@ function Project() {
         <section className={classes.Items}>
           {projectData &&
             projectData.map((project, index) => (
-              <div className={classes.Item}>
+              <div key={index} className={classes.Item}>
                 <div className={classes.ItemImage}>
                   <img
                     className={classes.BoxImg}

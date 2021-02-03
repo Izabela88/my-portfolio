@@ -1,12 +1,17 @@
 .About {
-  position: relative;
   height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #1d2228;
-  max-width: 1300px;
+  width: 100%;
+  background-color: #151515;
+  z-index: 3;
+  position: relative;
   margin: auto;
+  top: 0;
+}
+
+.Container {
+  margin: auto;
+  max-width: 1300px;
+  position: relative;
 }
 
 .AboutImg {
@@ -24,14 +29,14 @@
   width: 100%;
 }
 
-.AboutText {
+.AboutHeader {
   position: absolute;
   letter-spacing: 1px;
-  left: -22%;
-  bottom: 37%;
+  left: -19%;
+  margin-top: 14%;
 }
 
-.AboutText h1 {
+.AboutHeader h1 {
   transform: rotate(-90deg);
   font-family: 'Montserrat', sans-serif;
   font-size: 135px;
@@ -42,10 +47,10 @@
   font-family: 'Montserrat', sans-serif;
   font-size: 15px;
   position: absolute;
-  left: 68%;
+  left: 18%;
   width: 500px;
   height: 500px;
-  bottom: -5%;
+  margin-top: 8%;
   line-height: 30px;
   color: #ffbe2d;
 }
@@ -54,7 +59,7 @@
   position: absolute;
   font-family: 'Montserrat', sans-serif;
   left: 27%;
-  bottom: 20%;
+  margin-top: 50%;
   width: 200px;
   height: 23px;
   letter-spacing: 2px;

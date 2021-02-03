@@ -1,0 +1,10 @@
+.ProgressbarItems {
+  position: absolute;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  top: 42%;
+  left: 32%;
+  grid-gap: 70px;
+}

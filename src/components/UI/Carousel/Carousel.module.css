@@ -1,0 +1,123 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Slides {
+  display: grid;
+}
+.Slides > .Slide {
+  grid-area: 1/-1;
+}
+.Slides > button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: #ffbe2d;
+  position: absolute;
+  font-size: 5rem;
+  width: 5rem;
+  height: 5rem;
+  top: 30%;
+  transition: opacity 0.3s;
+  opacity: 1;
+  z-index: 5;
+  cursor: pointer;
+}
+.Slides > button:hover {
+  opacity: 0.3;
+}
+.Slides > button:focus {
+  outline: none;
+}
+.Slides > button:first-child {
+  left: -50%;
+}
+.Slides > button:last-child {
+  right: -50%;
+}
+
+.SlideContent {
+  width: 30vw;
+  height: 40vw;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: transform 0.5s ease-in-out;
+  opacity: 0.3;
+  display: grid;
+  align-content: center;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) translateX(calc(100% * var(--offset)))
+    rotateY(calc(-45deg * var(--dir)));
+}
+
+.SlideContentInner {
+  transform-style: preserve-3d;
+  transform: translateZ(2rem);
+  transition: opacity 0.3s linear;
+  text-shadow: 0 0.1rem 1rem #000;
+  opacity: 0;
+  color: #ffbe2d;
+  background-color: rgb(24 22 23 / 36%);
+}
+.SlideContentInner .SlideSubtitle,
+.SlideContentInner .SlideTitle {
+  font-size: 55px;
+  font-weight: normal;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  margin: 15px 0;
+  font-family: 'Montserrat', sans-serif;
+}
+.SlideContentInner .SlideSubtitle::before {
+  content: '— ';
+}
+.SlideContentInner .SlideDescription {
+  margin: 15px 0;
+  font-size: 25px;
+  letter-spacing: 2px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.SlideBackground {
+  position: fixed;
+  top: 0;
+  left: -10%;
+  right: -10%;
+  bottom: 0;
+  background-size: cover;
+  background-position: center center;
+  z-index: -1;
+  opacity: 0;
+  transition: opacity 0.3s linear, transform 0.3s ease-in-out;
+  pointer-events: none;
+  transform: translateX(calc(10% * var(--dir)));
+}
+
+.Slide[data-active] {
+  z-index: 2;
+  pointer-events: auto;
+}
+.Slide[data-active] .SlideBackground {
+  opacity: 0.2;
+  transform: none;
+}
+.Slide[data-active] .SlideContentInner {
+  opacity: 1;
+}
+.Slide[data-active] .SlideContent {
+  --x: calc(var(--px) - 0.5);
+  --y: calc(var(--py) - 0.5);
+  opacity: 1;
+  transform: perspective(1000px);
+}
+.Slide[data-active] .SlideContent:hover {
+  transition: none;
+  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
+    rotateX(calc(var(--y) * -45deg));
+}

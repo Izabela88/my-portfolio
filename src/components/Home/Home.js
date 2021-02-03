@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Home.module.css';
 import img from '../../assets/images/imgbg.jpeg';
-import Icons from '../UI/SocialIcons/Icons';
+import SocialIcons from '../UI/SocialIcons/SocialIcons';
 
 class Home extends Component {
   render() {
@@ -25,7 +25,7 @@ class Home extends Component {
               here...
             </p>
           </div>
-          <Icons />
+          <SocialIcons />
         </section>
       </main>
     );

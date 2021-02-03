@@ -1,9 +1,18 @@
 .Contact {
   height: 100vh;
+  width: 100%;
+  background-color: #151515;
+  z-index: 3;
   position: relative;
   margin: auto;
-  max-width: 1300px;
   font-family: 'Montserrat', sans-serif;
+  z-index: 3;
+}
+
+.Container {
+  margin: auto;
+  max-width: 1300px;
+  position: relative;
 }
 
 .ContactImg {
@@ -29,16 +38,16 @@
   position: absolute;
   bottom: 41%;
   color: #fff;
-  left: 13%;
+  left: 15%;
   letter-spacing: 1px;
   width: 440px;
   height: 300px;
   line-height: 90px;
-  font-size: 26px;
+  font-size: 20px;
 }
 
 .ContactBox {
-  left: 50%;
+  left: 53%;
   bottom: 35%;
   position: absolute;
 }
@@ -96,4 +105,5 @@
 
 .ContactBtn:hover {
   background-color: #ff4046;
+  color: #fff;
 }

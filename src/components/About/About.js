@@ -5,12 +5,14 @@ import imgbg from '../../assets/images/me.png';
 class About extends Component {
   render() {
     return (
-      <div className={classes.About} id='about'>
-        <div className={classes.AboutImg}>
-          <img src={imgbg} alt='' />
-        </div>
-        <div className={classes.AboutText}>
-          <h1>about me.</h1>
+      <main className={classes.About} id='about'>
+        <section className={classes.Container}>
+          <div className={classes.AboutImg}>
+            <img src={imgbg} alt='' />
+          </div>
+          <div className={classes.AboutHeader}>
+            <h1>about me.</h1>
+          </div>
           <div className={classes.BoxText}>
             <p>
               I did a lot of things in my life, I was a sales representative,
@@ -29,14 +31,15 @@ class About extends Component {
               give 200% of myself to achieve the intended goal.
             </p>
           </div>
-        </div>
-        <div className={classes.DownloadLink}>
-          <a href='/'>Download my CV</a>
-          <div className={classes.Line}>
-            <hr />
+
+          <div className={classes.DownloadLink}>
+            <a href='/'>Download my CV</a>
+            <div className={classes.Line}>
+              <hr />
+            </div>
           </div>
-        </div>
-      </div>
+        </section>
+      </main>
     );
   }
 }
