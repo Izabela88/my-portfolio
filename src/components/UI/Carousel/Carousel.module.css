@@ -18,12 +18,12 @@
   appearance: none;
   background: transparent;
   border: none;
-  color: #151515;
+  color: #ffbe2d;
   position: absolute;
   font-size: 8rem;
   width: 5rem;
   height: 5rem;
-  top: 30%;
+  top: -25%;
   transition: opacity 0.3s;
   opacity: 1;
   z-index: 5;
@@ -43,14 +43,14 @@
 }
 
 .SlideContent {
-  margin-top: 6rem;
-  width: 30vw;
+  margin-top: -15%;
+  width: 345px;
   height: 40vh;
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out;
-  opacity: 0.3;
+  opacity: 0.1;
   display: grid;
   align-content: center;
   transform-style: preserve-3d;
@@ -60,18 +60,16 @@
 
 .SlideContentInner {
   transform-style: preserve-3d;
-  transform: translateZ(4rem);
+  transform: translateZ(60px);
   transition: opacity 0.3s linear;
-  text-shadow: 0 0.1rem 1rem rgb(255 190 45 / 48%);
+  text-shadow: 0 6px 16px rgb(255 190 45 / 48%);
   opacity: 0;
   color: #ffbe2d;
-  background-color: rgb(0 0 0 / 60%);
-  top: 70%;
+  top: 220px;
 }
 .SlideContentInner .SlideSubtitle,
 .SlideContentInner .SlideTitle {
-  font-size: 35px;
-  font-weight: normal;
+  font-size: 30px;
   letter-spacing: 4px;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
@@ -80,8 +78,8 @@
   content: '— ';
 }
 .SlideContentInner .SlideDescription {
-  margin: 15px 0;
-  font-size: 25px;
+  margin: 20px 0;
+  font-size: 23px;
   letter-spacing: 2px;
   font-family: 'Indie Flower', cursive;
 }

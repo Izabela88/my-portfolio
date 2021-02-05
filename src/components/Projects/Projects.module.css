@@ -40,7 +40,7 @@
 .Item {
   position: relative;
   overflow: hidden;
-  background-color: #ff4046;
+  background-color: #ffbe2d;
 }
 
 .Item::after {
@@ -103,7 +103,7 @@
   opacity: 0;
   text-align: center;
   z-index: 1;
-  color: #ffbe2d;
+  color: #151515;
   transform: translateY(-20%);
   transition: opacity 500ms cubic-bezier(0.2, 1, 0.3, 1),
     transform 500ms cubic-bezier(0.2, 1, 0.3, 1);
@@ -119,12 +119,12 @@
 
 .TextWrap a {
   text-decoration: none;
-  color: #ffbe2d;
+  color: #151515;
   font-weight: bold;
 }
 
 .TextWrap a:hover {
-  color: #1d2228;
+  color: #fff;
 }
 
 .TextTitle {

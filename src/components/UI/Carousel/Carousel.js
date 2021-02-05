@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from './Carousel.module.css';
 import icon1 from '../../../assets/images/html5.svg';
-import icon2 from '../../../assets/images/css3.svg';
+import icon2 from '../../../assets/images/css31.svg';
 import icon3 from '../../../assets/images/javascript.svg';
-import icon4 from '../../../assets/images/react.svg';
-import icon5 from '../../../assets/images/sass.svg';
+import icon4 from '../../../assets/images/react1.svg';
+import icon5 from '../../../assets/images/sass1.svg';
 
 console.clear();
 
@@ -127,6 +127,7 @@ function Slide({ slide, offset }) {
         className={classes.SlideContent}
         style={{
           backgroundImage: `url('${slide.image}')`,
+          width: '310px',
         }}
       >
         <div className={classes.SlideContentInner}>
@@ -146,7 +147,7 @@ function Carousel() {
     <div className={classes.Slides}>
       <button
         className={classes.CarouselBtn}
-        onClick={() => dispatch({ type: 'PREV' })}
+        onClick={() => dispatch({ type: 'NEXT' })}
       >
         ‹
       </button>
@@ -157,7 +158,7 @@ function Carousel() {
       })}
       <button
         className={classes.CarouselBtn}
-        onClick={() => dispatch({ type: 'NEXT' })}
+        onClick={() => dispatch({ type: 'PREV' })}
       >
         ›
       </button>

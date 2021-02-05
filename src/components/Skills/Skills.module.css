@@ -9,7 +9,9 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #ffbe2d;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
   overflow: hidden;
   font-family: 'Montserrat', sans-serif;
 }
@@ -20,11 +22,11 @@
   justify-content: center;
   margin: auto;
   width: 1000px;
-  top: -19%;
+  top: -15%;
 }
 
 .SectionHeading h1 {
   font-size: 187px;
   letter-spacing: 1px;
-  color: rgb(21 21 21 / 38%);
+  color: rgb(253, 187, 45, 50%);
 }
