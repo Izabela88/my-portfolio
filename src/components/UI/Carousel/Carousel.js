@@ -1,10 +1,10 @@
 import React from 'react';
 import classes from './Carousel.module.css';
-import img7 from '../../../assets/images/img7.jpg';
-import imgH from '../../../assets/images/imgH.jpg';
-import img1 from '../../../assets/images/img-1.jpg';
-import imgD from '../../../assets/images/imgD.jpg';
-import imgZ from '../../../assets/images/imgZ.jpg';
+import icon1 from '../../../assets/images/html5.svg';
+import icon2 from '../../../assets/images/css3.svg';
+import icon3 from '../../../assets/images/javascript.svg';
+import icon4 from '../../../assets/images/react.svg';
+import icon5 from '../../../assets/images/sass.svg';
 
 console.clear();
 
@@ -13,31 +13,31 @@ const slides = [
     title: 'HTML5',
     subtitle: '99,9%',
     description: 'The basics achieved !',
-    image: img7,
+    image: icon1,
   },
   {
     title: 'CSS3',
     subtitle: '70%',
     description: 'Almost got it... :)',
-    image: imgH,
+    image: icon2,
   },
   {
     title: 'JavaScript',
-    subtitle: '40%',
+    subtitle: '70%',
     description: '... my little nightmare... ;D',
-    image: img1,
+    image: icon3,
   },
   {
     title: 'Sass',
     subtitle: '70%',
     description: 'I think it is OK :D',
-    image: imgD,
+    image: icon5,
   },
   {
     title: 'React.js',
-    subtitle: '30%',
+    subtitle: '40%',
     description: "I'm just getting started... xD",
-    image: imgZ,
+    image: icon4,
   },
 ];
 

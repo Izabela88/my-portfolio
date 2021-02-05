@@ -12,14 +12,15 @@
   grid-area: 1/-1;
 }
 .Slides > button {
+  margin-top: 10rem;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
   background: transparent;
   border: none;
-  color: #ffbe2d;
+  color: #151515;
   position: absolute;
-  font-size: 5rem;
+  font-size: 8rem;
   width: 5rem;
   height: 5rem;
   top: 30%;
@@ -29,7 +30,7 @@
   cursor: pointer;
 }
 .Slides > button:hover {
-  opacity: 0.3;
+  opacity: 0.7;
 }
 .Slides > button:focus {
   outline: none;
@@ -42,9 +43,10 @@
 }
 
 .SlideContent {
+  margin-top: 6rem;
   width: 30vw;
-  height: 40vw;
-  background-size: cover;
+  height: 40vh;
+  background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   transition: transform 0.5s ease-in-out;
@@ -58,20 +60,20 @@
 
 .SlideContentInner {
   transform-style: preserve-3d;
-  transform: translateZ(2rem);
+  transform: translateZ(4rem);
   transition: opacity 0.3s linear;
-  text-shadow: 0 0.1rem 1rem #000;
+  text-shadow: 0 0.1rem 1rem rgb(255 190 45 / 48%);
   opacity: 0;
   color: #ffbe2d;
-  background-color: rgb(24 22 23 / 36%);
+  background-color: rgb(0 0 0 / 60%);
+  top: 70%;
 }
 .SlideContentInner .SlideSubtitle,
 .SlideContentInner .SlideTitle {
-  font-size: 55px;
+  font-size: 35px;
   font-weight: normal;
   letter-spacing: 4px;
   text-transform: uppercase;
-  margin: 15px 0;
   font-family: 'Montserrat', sans-serif;
 }
 .SlideContentInner .SlideSubtitle::before {
@@ -84,7 +86,7 @@
   font-family: 'Indie Flower', cursive;
 }
 
-.SlideBackground {
+/* .SlideBackground {
   position: fixed;
   top: 0;
   left: -10%;
@@ -97,7 +99,7 @@
   transition: opacity 0.3s linear, transform 0.3s ease-in-out;
   pointer-events: none;
   transform: translateX(calc(10% * var(--dir)));
-}
+} */
 
 .Slide[data-active] {
   z-index: 2;
