@@ -1,13 +1,12 @@
 import React, { Component } from 'react';
 import classes from './Skills.module.css';
 import Carousel from '../UI/Carousel/Carousel';
-import imgA from '../../assets/images/pex1.jpg';
+import imgA from '../../assets/images/pex-1.jpg';
 
 class Skills extends Component {
   render() {
     return (
       <section
-        className={classes.SectionImg}
         style={{
           backgroundImage: `url(${imgA})`,
         }}

@@ -1,45 +1,11 @@
 import React from 'react';
+import sanityClient from '../../../client';
+
 import classes from './Carousel.module.css';
-import icon1 from '../../../assets/images/html5.svg';
-import icon2 from '../../../assets/images/css31.svg';
-import icon3 from '../../../assets/images/javascript.svg';
-import icon4 from '../../../assets/images/react1.svg';
-import icon5 from '../../../assets/images/sass1.svg';
 
 console.clear();
 
-const slides = [
-  {
-    title: 'HTML5',
-    subtitle: '99,9%',
-    description: 'The basics achieved !',
-    image: icon1,
-  },
-  {
-    title: 'CSS3',
-    subtitle: '70%',
-    description: 'Almost got it... :)',
-    image: icon2,
-  },
-  {
-    title: 'JavaScript',
-    subtitle: '70%',
-    description: '... my little nightmare... ;D',
-    image: icon3,
-  },
-  {
-    title: 'Sass',
-    subtitle: '70%',
-    description: 'I think it is OK :D',
-    image: icon5,
-  },
-  {
-    title: 'React.js',
-    subtitle: '40%',
-    description: "I'm just getting started... xD",
-    image: icon4,
-  },
-];
+const slides = [];
 
 function useTilt(active) {
   const ref = React.useRef(null);
@@ -117,12 +83,6 @@ function Slide({ slide, offset }) {
         '--dir': offset === 0 ? 0 : offset > 0 ? 1 : -1,
       }}
     >
-      {/* <div
-        className={classes.SlideBackground}
-        style={{
-          backgroundImage: `url('${slide.image}')`,
-        }}
-      /> */}
       <div
         className={classes.SlideContent}
         style={{
@@ -141,8 +101,31 @@ function Slide({ slide, offset }) {
 }
 
 function Carousel() {
-  const [state, dispatch] = React.useReducer(slidesReducer, initialState);
+  const query = `*[_type == "skills"]{
+    title,
+    mainImage{
+      asset->{
+        _id,
+        url
+      },
+      alt
+    },
+    subtitle,
+    description,
+  }`;
 
+  sanityClient.fetch(query).then((skills) => {
+    skills.forEach((skill) => {
+      slides.push({
+        title: skill.title,
+        subtitle: skill.subtitle,
+        description: skill.description,
+        image: skill.mainImage.asset.url,
+      });
+    });
+  });
+  const [state, dispatch] = React.useReducer(slidesReducer, initialState);
+  console.log(slides);
   return (
     <div className={classes.Slides}>
       <button

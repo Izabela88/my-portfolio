@@ -8,9 +8,11 @@
 .Slides {
   display: grid;
 }
+
 .Slides > .Slide {
   grid-area: 1/-1;
 }
+
 .Slides > button {
   margin-top: 10rem;
   -webkit-appearance: none;
@@ -67,6 +69,7 @@
   color: #ffbe2d;
   top: 220px;
 }
+
 .SlideContentInner .SlideSubtitle,
 .SlideContentInner .SlideTitle {
   font-size: 30px;
@@ -74,48 +77,39 @@
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
 }
+
 .SlideContentInner .SlideSubtitle::before {
   content: '— ';
 }
+
 .SlideContentInner .SlideDescription {
   margin: 20px 0;
-  font-size: 23px;
+  font-size: 21px;
   letter-spacing: 2px;
   font-family: 'Indie Flower', cursive;
 }
-
-/* .SlideBackground {
-  position: fixed;
-  top: 0;
-  left: -10%;
-  right: -10%;
-  bottom: 0;
-  background-size: cover;
-  background-position: center center;
-  z-index: -1;
-  opacity: 0;
-  transition: opacity 0.3s linear, transform 0.3s ease-in-out;
-  pointer-events: none;
-  transform: translateX(calc(10% * var(--dir)));
-} */
 
 .Slide[data-active] {
   z-index: 2;
   pointer-events: auto;
 }
+
 .Slide[data-active] .SlideBackground {
   opacity: 0.2;
   transform: none;
 }
+
 .Slide[data-active] .SlideContentInner {
   opacity: 1;
 }
+
 .Slide[data-active] .SlideContent {
   --x: calc(var(--px) - 0.5);
   --y: calc(var(--py) - 0.5);
   opacity: 1;
   transform: perspective(1000px);
 }
+
 .Slide[data-active] .SlideContent:hover {
   transition: none;
   transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
