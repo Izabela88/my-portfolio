@@ -101,31 +101,37 @@ function Slide({ slide, offset }) {
 }
 
 function Carousel() {
-  const query = `*[_type == "skills"]{
-    title,
-    mainImage{
-      asset->{
-        _id,
-        url
-      },
-      alt
-    },
-    subtitle,
-    description,
-  }`;
-
-  sanityClient.fetch(query).then((skills) => {
-    skills.forEach((skill) => {
-      slides.push({
-        title: skill.title,
-        subtitle: skill.subtitle,
-        description: skill.description,
-        image: skill.mainImage.asset.url,
+  React.useEffect(() => {
+    sanityClient
+      .fetch(
+        `*[_type == "skills"]{
+        title,
+        mainImage{
+          asset->{
+            _id,
+            url
+          },
+          alt
+        },
+        subtitle,
+        description,
+      }`
+      )
+      .then((skills) => {
+        skills.forEach((skill) => {
+          slides.push({
+            title: skill.title,
+            subtitle: skill.subtitle,
+            description: skill.description,
+            image: skill.mainImage.asset.url,
+          });
+        });
       });
-    });
-  });
-  const [state, dispatch] = React.useReducer(slidesReducer, initialState);
+  }, []);
+
   console.log(slides);
+
+  const [state, dispatch] = React.useReducer(slidesReducer, initialState);
   return (
     <div className={classes.Slides}>
       <button
