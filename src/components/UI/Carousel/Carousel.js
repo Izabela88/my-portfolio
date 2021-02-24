@@ -1,11 +1,6 @@
-import React from 'react';
-import sanityClient from '../../../client';
-
-import classes from './Carousel.module.css';
-
-console.clear();
-
-const slides = [];
+import React from "react";
+import sanityClient from "../../../client";
+import classes from "./Carousel.module.css";
 
 function useTilt(active) {
   const ref = React.useRef(null);
@@ -51,20 +46,27 @@ function useTilt(active) {
 
 const initialState = {
   slideIndex: 0,
+  slides: [],
 };
 
 const slidesReducer = (state, event) => {
-  if (event.type === 'NEXT') {
+  if (event.type === "SET_SLIDES") {
     return {
       ...state,
-      slideIndex: (state.slideIndex + 1) % slides.length,
+      slides: event.payload,
     };
   }
-  if (event.type === 'PREV') {
+  if (event.type === "NEXT") {
+    return {
+      ...state,
+      slideIndex: (state.slideIndex + 1) % state.slides.length,
+    };
+  }
+  if (event.type === "PREV") {
     return {
       ...state,
       slideIndex:
-        state.slideIndex === 0 ? slides.length - 1 : state.slideIndex - 1,
+        state.slideIndex === 0 ? state.slides.length - 1 : state.slideIndex - 1,
     };
   }
 };
@@ -101,6 +103,8 @@ function Slide({ slide, offset }) {
 }
 
 function Carousel() {
+  const [state, dispatch] = React.useReducer(slidesReducer, initialState);
+
   React.useEffect(() => {
     sanityClient
       .fetch(
@@ -119,19 +123,19 @@ function Carousel() {
       )
       .then((skills) => {
         skills.forEach((skill) => {
-          slides.push({
-            title: skill.title,
-            subtitle: skill.subtitle,
-            description: skill.description,
-            image: skill.mainImage.asset.url,
+          const values = skills.map((skill) => {
+            return {
+              title: skill.title,
+              subtitle: skill.subtitle,
+              description: skill.description,
+              image: skill.mainImage.asset.url,
+            };
           });
+          dispatch({ type: "SET_SLIDES", payload: values });
         });
       });
   }, []);
 
-  console.log(slides);
-
-  const [state, dispatch] = React.useReducer(slidesReducer, initialState);
   return (
     <div className={classes.Slides}>
       <button
@@ -141,8 +145,8 @@ function Carousel() {
         ‹
       </button>
 
-      {[...slides, ...slides, ...slides].map((slide, i) => {
-        let offset = slides.length + (state.slideIndex - i);
+      {[...state.slides, ...state.slides, ...state.slides].map((slide, i) => {
+        let offset = state.slides.length + (state.slideIndex - i);
         return <Slide slide={slide} offset={offset} key={i} />;
       })}
       <button
