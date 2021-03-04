@@ -1,8 +1,15 @@
 import React, { Component } from 'react';
 import classes from './Contact.module.css';
 import img from '../../assets/images/contact-img.jpeg';
+import Button from '../UI/Button/Button';
 
-class Home extends Component {
+class Contact extends Component {
+  state = {
+    name: '',
+    subject: '',
+    email: '',
+    textarea: '',
+  };
   render() {
     return (
       <section className={classes.Contact} id='contact'>
@@ -15,7 +22,7 @@ class Home extends Component {
           </div>
           <div className={classes.ContactText}>
             <p>
-              Here is how you can reach me: <br /> izabkru88@gmail.com <br />{' '}
+              Here is how you can reach me: <br /> izabkru88@gmail.com <br />
               +44 7868197008
             </p>
           </div>
@@ -23,7 +30,7 @@ class Home extends Component {
             <div className={classes.ContactQuestion}>
               <p>Any questions?</p>
             </div>
-            <form method='POST'>
+            <form>
               <div className={classes.TextFields}>
                 <input
                   type='text'
@@ -55,9 +62,7 @@ class Home extends Component {
                   name='message'
                 ></textarea>
               </div>
-              <button className={classes.ContactBtn} type='submit'>
-                Submit
-              </button>
+              <Button>SUBMIT</Button>
             </form>
           </div>
         </div>
@@ -66,4 +71,4 @@ class Home extends Component {
   }
 }
 
-export default Home;
+export default Contact;
