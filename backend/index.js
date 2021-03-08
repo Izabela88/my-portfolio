@@ -3,6 +3,7 @@ const express = require('express');
 const router = express.Router();
 const cors = require('cors');
 const nodemailer = require('nodemailer');
+const creds = require('./config');
 
 const app = express();
 app.use(cors());
@@ -14,8 +15,8 @@ const contactEmail = nodemailer.createTransport({
   host: 'smtp.gmail.com',
   port: 587,
   auth: {
-    user: 'izabeladev88@gmail.com',
-    pass: '',
+    user: creds.USER,
+    pass: creds.PASS,
   },
 });
 
@@ -35,7 +36,7 @@ router.post('/contact', (req, res) => {
   const message = req.body.message;
   const mail = {
     from: name,
-    to: 'izabeladev88@gmail.com',
+    to: creds.USER,
     subject: 'Contact Form Message',
     html: `<p>Name: ${name}</p> <p>Subject: ${subject}</p><p>Email: ${email}</p><p>Phone: ${phone}</p><p>Message: ${message}</p>`,
   };
