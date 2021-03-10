@@ -24,7 +24,7 @@
   position: absolute;
   letter-spacing: 1px;
   left: -19%;
-  bottom: 31%;
+  bottom: 32%;
 }
 
 .ContactHeader h1 {
@@ -46,13 +46,14 @@
   line-height: 90px;
   font-size: 20px;
   font-weight: bold;
-  background-color: rgb(21 21 21 / 68%);
+  backdrop-filter: blur(15px);
 }
 
 .ContactBox {
-  left: 53%;
-  bottom: 35%;
+  left: 50%;
+  bottom: 32%;
   position: absolute;
+  backdrop-filter: blur(15px);
 }
 
 .ContactQuestion {
@@ -62,53 +63,12 @@
   display: flex;
   justify-content: center;
   letter-spacing: 5px;
-  margin: 20px 0;
+  margin: -40px 0;
   font-weight: bold;
 }
 
 .TextFields {
   display: grid;
-  grid-template-areas:
-    'name email'
-    'subject phone'
-    'message message';
-  grid-gap: 40px;
   width: 560px;
-  height: 300px;
-}
-
-.TextFields > input,
-.TextFields > textarea {
-  background-color: #151515;
-}
-
-.NameInput {
-  grid-area: name;
-}
-.SubjectInput {
-  grid-area: subject;
-}
-
-.PhoneInput {
-  grid-area: phone;
-}
-.MessageInput {
-  grid-area: message;
-  height: 100px;
-}
-
-.TextInput {
-  padding: 0.5rem 1rem;
-}
-
-input::placeholder,
-textarea::placeholder {
-  color: #ffbe2d;
-  font-family: 'Montserrat', sans-serif;
-}
-
-input,
-textarea {
-  color: #ffbe2d;
-  border: none;
+  height: auto;
 }

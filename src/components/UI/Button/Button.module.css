@@ -1,6 +1,6 @@
 .ContactBtn {
   border: none;
-  width: 100%;
+  width: 552px;
   height: 45px;
   background-color: #151515;
   cursor: pointer;
@@ -9,6 +9,9 @@
   text-transform: uppercase;
   font-weight: bold;
   color: #ffbe2d;
+  position: absolute;
+  top: 72%;
+  left: 50%;
 }
 
 .ContactBtn:hover {

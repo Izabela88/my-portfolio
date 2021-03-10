@@ -3,6 +3,7 @@ import classes from './Contact.module.css';
 import img from '../../assets/images/contact-img.jpeg';
 import Button from '../UI/Button/Button';
 import axios from 'axios';
+import Input from '../UI/Input/Input';
 
 class Contact extends Component {
   state = {
@@ -15,6 +16,7 @@ class Contact extends Component {
   };
 
   handleChange(event) {
+    event.preventDefault();
     const field = event.target.id;
     if (field === 'name') {
       this.setState({ name: event.target.value });
@@ -45,7 +47,7 @@ class Contact extends Component {
           email: '',
           phone: '',
           message: '',
-          status: 'Submit',
+          status: 'Send',
         });
       } else if (response.data.status === 'failed') {
         alert('Message has not been sent.');
@@ -68,59 +70,61 @@ class Contact extends Component {
           <div className={classes.ContactText}>
             <p>
               Here is how you can reach me: <br /> izabkru88@gmail.com <br />
-              +44 7868197008 ada
+              +44 7868197008
             </p>
           </div>
           <div className={classes.ContactBox}>
             <div className={classes.ContactQuestion}>
               <p>Any questions?</p>
             </div>
-            <form onSubmit={this.handleSubmit.bind(this)} method='POST'>
-              <div className={classes.TextFields}>
-                <input
-                  type='text'
-                  className={(classes.TextInput, classes.NameInput)}
-                  placeholder='Name'
-                  id='name'
-                  value={this.state.name}
-                  onChange={this.handleChange.bind(this)}
-                  required
-                />
-                <input
-                  type='text'
-                  className={(classes.TextInput, classes.SubjectInput)}
-                  placeholder='Subject'
-                  id='subject'
-                  value={this.state.subject}
-                  onChange={this.handleChange.bind(this)}
-                />
-                <input
-                  type='email'
-                  className={(classes.TextInput, classes.EmailInput)}
-                  placeholder='Email Address'
-                  id='email'
-                  value={this.state.email}
-                  onChange={this.handleChange.bind(this)}
-                />
-                <input
-                  type='text'
-                  className={(classes.TextInput, classes.PhoneInput)}
-                  placeholder='Phone Number'
-                  id='phone'
-                  value={this.state.phone}
-                  onChange={this.handleChange.bind(this)}
-                />
-                <textarea
-                  className={(classes.TextInput, classes.MessageInput)}
-                  placeholder='Enter Message'
-                  id='message'
-                  value={this.state.message}
-                  onChange={this.handleChange.bind(this)}
-                ></textarea>
-              </div>
-              <Button type='submit'>{buttonText}</Button>
+            <form
+              className={classes.TextFields}
+              onSubmit={this.handleSubmit.bind(this)}
+              method='POST'
+            >
+              <Input
+                inputtype='input'
+                type='text'
+                placeholder='Name'
+                id='name'
+                value={this.state.name}
+                onChange={this.handleChange.bind(this)}
+                required
+              />
+              <Input
+                inputtype='input'
+                type='text'
+                placeholder='Subject'
+                id='subject'
+                value={this.state.subject}
+                onChange={this.handleChange.bind(this)}
+              />
+              <Input
+                inputtype='input'
+                type='email'
+                placeholder='Email Address'
+                id='email'
+                value={this.state.email}
+                onChange={this.handleChange.bind(this)}
+              />
+              <Input
+                inputtype='input'
+                type='text'
+                placeholder='Phone Number'
+                id='phone'
+                value={this.state.phone}
+                onChange={this.handleChange.bind(this)}
+              />
+              <Input
+                inputtype='textarea'
+                placeholder='Enter Message'
+                id='message'
+                value={this.state.message}
+                onChange={this.handleChange.bind(this)}
+              ></Input>
             </form>
           </div>
+          <Button type='submit'>{buttonText}</Button>
         </div>
       </section>
     );

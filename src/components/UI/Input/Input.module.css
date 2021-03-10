@@ -1,0 +1,36 @@
+.Input {
+  width: 100%;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.Label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px;
+}
+
+.InputElement {
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  font: inherit;
+  padding: 15px 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid #151515;
+  overflow: hidden;
+}
+
+.InputElement::placeholder {
+  color: #ffbe2d;
+}
+
+.InputElement:focus {
+  outline: none;
+  background-color: #151515;
+  color: #ffbe2d;
+}
