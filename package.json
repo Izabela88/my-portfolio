@@ -12,8 +12,10 @@
     "@testing-library/jest-dom": "^5.11.8",
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
+    "@types/yup": "^0.29.11",
     "axios": "^0.21.1",
     "dotenv": "^8.2.0",
+    "formik": "^2.2.6",
     "i": "^0.3.6",
     "npm": "^6.14.11",
     "react": "^17.0.1",
@@ -26,7 +28,9 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.1",
     "react-scroll": "^1.8.1",
-    "web-vitals": "^0.2.4"
+    "web-vitals": "^0.2.4",
+    "yup": "^0.32.9",
+    "yup-phone": "^1.2.19"
   },
   "scripts": {
     "start": "react-scripts start",

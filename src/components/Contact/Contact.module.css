@@ -51,8 +51,12 @@
 
 .ContactBox {
   left: 50%;
-  bottom: 32%;
+  bottom: 22%;
   position: absolute;
+  width: 500px;
+  height: 700px;
+  padding: 15px;
+  box-sizing: border-box;
 }
 
 .ContactQuestion {
@@ -62,7 +66,7 @@
   display: flex;
   justify-content: center;
   letter-spacing: 5px;
-  margin: -40px 0;
+  margin: 10px 0;
   font-weight: bold;
 }
 
@@ -70,4 +74,57 @@
   display: grid;
   width: 560px;
   height: auto;
+}
+
+.InputElement {
+  margin: 10px 0;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  font: inherit;
+  padding: 15px 10px;
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+  border-bottom: 1px solid #151515;
+  overflow: hidden;
+  height: 55px;
+}
+
+.InputElement::placeholder {
+  color: #ffbe2d;
+}
+
+.InputElement:focus {
+  outline: none;
+  color: #ffbe2d;
+}
+
+.Error {
+  color: red;
+  font-size: 12px;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.ContactBtn {
+  border: none;
+  width: 500px;
+  height: 45px;
+  background-color: #151515;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffbe2d;
+  position: absolute;
+  top: 109%;
+  left: -4%;
+}
+
+.ContactBtn:hover {
+  background-color: #ff4046;
 }
