@@ -4,15 +4,12 @@ import img from '../../assets/images/contact-img.jpeg';
 import axios from 'axios';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
-import 'yup-phone';
-// import Button from '../UI/Button/Button';
 
 const Schema = Yup.object().shape({
-  name: Yup.string().required('Name required'),
-  subject: Yup.string().required('Subject required'),
-  email: Yup.string().email('Invalid email!').required('Email required'),
-  phone: Yup.string().phone().min(10).max(13).required('Phone required'),
-  message: Yup.string().max(600).required('Message required'),
+  name: Yup.string().required('Required'),
+  subject: Yup.string().required('Required'),
+  email: Yup.string().email('Invalid email!').required('Required'),
+  message: Yup.string().max(600).required('Required'),
 });
 
 class Contact extends Component {
@@ -39,7 +36,6 @@ class Contact extends Component {
               name: '',
               subject: '',
               email: '',
-              phone: '',
               message: '',
             }}
             onSubmit={(values) => {
@@ -55,7 +51,6 @@ class Contact extends Component {
                     name: '',
                     subject: '',
                     email: '',
-                    phone: '',
                     message: '',
                   });
                 } else if (response.data.status === 'failed') {
@@ -95,15 +90,7 @@ class Contact extends Component {
                   {errors.email && touched.email ? (
                     <div className={classes.Error}>{errors.email}</div>
                   ) : null}
-                  <Field
-                    className={classes.InputElement}
-                    name='phone'
-                    type='phone'
-                    placeholder='Phone Number'
-                  />
-                  {errors.phone && touched.phone ? (
-                    <div className={classes.Error}>{errors.phone}</div>
-                  ) : null}
+
                   <Field
                     className={classes.InputElement}
                     name='message'
