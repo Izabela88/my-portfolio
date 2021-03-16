@@ -63,6 +63,7 @@
   width: 200px;
   height: 23px;
   letter-spacing: 2px;
+
 }
 
 .DownloadLink a {
@@ -70,6 +71,8 @@
   text-decoration: none;
   font-family: 'Indie Flower', cursive;
   font-size: 24px;
+  transition-duration: 0.4s;
+
 }
 .DownloadLink a:hover {
   color: #ffbe2d;

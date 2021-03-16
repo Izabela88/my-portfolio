@@ -33,6 +33,8 @@
     height: 100%;
     padding: 10px 20px;
     font-weight: bold;
+    transition-duration: 0.5s;
+
   }
 
   .NavigationItem a:hover,

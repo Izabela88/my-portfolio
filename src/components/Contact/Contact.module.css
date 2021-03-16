@@ -82,24 +82,25 @@
   font-family: 'Montserrat', sans-serif;
   background-color: transparent;
   font: inherit;
-  padding: 15px 10px;
+  padding: 5px 5px;
   display: block;
   width: 100%;
   border: none;
   cursor: pointer;
-  border-bottom: 1px solid #151515;
-  overflow: hidden;
-  height: 70px;
+  border: 1px solid #f9cf75;
+  height: 55px;
   position: relative;
 }
 
 .InputElement::placeholder {
-  color: #ffbe2d;
+  color: #f7a900;
+  font-size: 14px;
 }
 
 .InputElement:focus {
   outline: none;
-  color: #ffbe2d;
+  color: #151515;
+  background-color: #f7dfad;
 }
 
 .Error {
@@ -111,20 +112,22 @@
 
 .ContactBtn {
   border: none;
-  width: 500px;
-  height: 45px;
-  background-color: #151515;
-  cursor: pointer;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  font-weight: bold;
-  color: #ffbe2d;
-  position: absolute;
-  top: 115%;
-  left: -4%;
+    width: 490px;
+    height: 45px;
+    background-color: #f9cf75;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #151515;
+    position: absolute;
+    top: 115%;
+    left: -2%;
+    transition-duration: 0.5s;
+
 }
 
 .ContactBtn:hover {
-  background-color: #ff4046;
+  background-color: #f9aa00;
 }

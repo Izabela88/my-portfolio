@@ -11,6 +11,8 @@
   font-size: 30px;
   margin-left: 80px;
   color: #fff;
+  transition-duration: 0.5s;
+
 }
 
 .Icon:hover {
