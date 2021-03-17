@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Home.module.css';
 import img from '../../assets/images/imgbg.jpeg';
-import SocialIcons from '../UI/SocialIcons/SocialIcons';
+import SocialIcons from '../UI/Icon/Icon';
 
 class Home extends Component {
   render() {
@@ -25,7 +25,20 @@ class Home extends Component {
               here...
             </p>
           </div>
-          <SocialIcons />
+          <div className={classes.Icons}>
+            <SocialIcons
+              iconName={'FaGithub'}
+              link={'https://github.com/Izabela88'}
+            />
+            <SocialIcons
+              iconName={'FaLinkedin'}
+              link={'https://www.linkedin.com/in/izabela-krupinska-161a351a5/'}
+            />
+            <SocialIcons
+              iconName={'FaFacebook'}
+              link={'https://www.facebook.com/izabela.krupinska.77/'}
+            />
+          </div>
         </section>
       </main>
     );
