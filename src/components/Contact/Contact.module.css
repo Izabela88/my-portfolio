@@ -100,7 +100,7 @@
 .InputElement:focus {
   outline: none;
   color: #151515;
-  background-color: #f7dfad;
+  background-color: #f9cf75;
 }
 
 .Error {
@@ -114,7 +114,7 @@
   border: none;
     width: 490px;
     height: 45px;
-    background-color: #f9cf75;
+    background-color: #f9b520;
     cursor: pointer;
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
@@ -125,9 +125,12 @@
     top: 115%;
     left: -2%;
     transition-duration: 0.5s;
-
+    box-shadow: 5px 5px 30px #151515;
 }
 
 .ContactBtn:hover {
   background-color: #f9aa00;
+  box-shadow: 5px 5px 40px #151515;
+
+
 }

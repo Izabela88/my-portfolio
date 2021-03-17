@@ -27,6 +27,7 @@
 .AboutImg img {
   height: 100%;
   width: 100%;
+  filter: drop-shadow(-10px -13px 50px #585858);
 }
 
 .AboutHeader {
