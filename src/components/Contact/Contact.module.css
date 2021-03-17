@@ -18,7 +18,7 @@
 .ContactImg {
   height: 100%;
   width: 100%;
-  filter: blur(10px);
+  filter: blur(6px);
 }
 
 .ContactHeader {

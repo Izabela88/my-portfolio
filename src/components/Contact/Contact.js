@@ -108,7 +108,7 @@ class Contact extends Component {
                     <div className={classes.Error}>{errors.message}</div>
                   ) : null}
                   <button className={classes.ContactBtn} type='submit'>
-                    Submit
+                    Send Message
                   </button>
                 </Form>
               </div>
