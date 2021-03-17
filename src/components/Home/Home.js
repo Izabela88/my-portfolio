@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import classes from './Home.module.css';
 import img from '../../assets/images/imgbg.jpeg';
-import SocialIcons from '../UI/Icon/Icon';
+import Icon from '../UI/Icon/Icon';
 
 class Home extends Component {
   render() {
@@ -26,15 +26,12 @@ class Home extends Component {
             </p>
           </div>
           <div className={classes.Icons}>
-            <SocialIcons
-              iconName={'FaGithub'}
-              link={'https://github.com/Izabela88'}
-            />
-            <SocialIcons
+            <Icon iconName={'FaGithub'} link={'https://github.com/Izabela88'} />
+            <Icon
               iconName={'FaLinkedin'}
               link={'https://www.linkedin.com/in/izabela-krupinska-161a351a5/'}
             />
-            <SocialIcons
+            <Icon
               iconName={'FaFacebook'}
               link={'https://www.facebook.com/izabela.krupinska.77/'}
             />

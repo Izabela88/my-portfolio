@@ -4,6 +4,7 @@ import img from '../../assets/images/contact-img.jpeg';
 import axios from 'axios';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
+import Icon from '../UI/Icon/Icon';
 
 const Schema = Yup.object().shape({
   name: Yup.string().required('Required'),
@@ -28,6 +29,12 @@ class Contact extends Component {
               Here is how you can reach me: <br /> izabkru88@gmail.com <br />
               +44 7868197008
             </p>
+          </div>
+          <div className={classes.EmailIcon}>
+            <Icon iconName={'FaEnvelope'} />
+          </div>
+          <div className={classes.PhoneIcon}>
+            <Icon iconName={'FaPhoneSquare'} />
           </div>
 
           <Formik

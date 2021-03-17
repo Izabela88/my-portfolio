@@ -112,25 +112,40 @@
 
 .ContactBtn {
   border: none;
-    width: 490px;
-    height: 45px;
-    background-color: #f9b520;
-    cursor: pointer;
-    font-family: 'Montserrat', sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-weight: bold;
-    color: #151515;
-    position: absolute;
-    top: 115%;
-    left: -2%;
-    transition-duration: 0.5s;
-    box-shadow: 5px 5px 30px #151515;
+  width: 490px;
+  height: 45px;
+  background-color: #f9b520;
+  cursor: pointer;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #151515;
+  position: absolute;
+  top: 115%;
+  left: -2%;
+  transition-duration: 0.5s;
+  box-shadow: 5px 5px 30px #151515;
 }
 
 .ContactBtn:hover {
   background-color: #f9aa00;
   box-shadow: 5px 5px 40px #151515;
+}
 
+.PhoneIcon {
+  position: absolute;
+  bottom: 401px;
+  left: 173px;
+  width: 46px;
+  display: flex;
+  justify-content: center;
+}
 
+.EmailIcon {
+  position: absolute;
+  bottom: 491px;
+  left: 179px;
+  display: flex;
+  justify-content: center;
 }

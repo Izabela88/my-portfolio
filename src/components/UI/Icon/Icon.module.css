@@ -1,16 +1,4 @@
 .Icon {
-  font-size: 10px;
-  font-size: 30px;
-  margin-left: 80px;
+  font-size: 35px;
   color: #fff;
-  transition-duration: 0.5s;
-  cursor: pointer;
-  width: 40px;
-  display: flex;
-  justify-content: center;
-  padding: 5px;
-}
-
-.Icon:hover {
-  color: #ff4046;
 }
