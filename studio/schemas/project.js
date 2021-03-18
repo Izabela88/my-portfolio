@@ -51,9 +51,6 @@ export default {
           type: 'string',
         },
       ],
-      options: {
-        layout: 'tags',
-      },
     },
   ],
   preview: {

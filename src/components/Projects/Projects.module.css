@@ -121,6 +121,7 @@
   text-decoration: none;
   color: #151515;
   font-weight: bold;
+  transition-duration: 0.5s;
 }
 
 .TextWrap a:hover {
