@@ -51,16 +51,23 @@
   left: 18%;
   width: 500px;
   height: 500px;
-  margin-top: 8%;
+  margin-top: 5%;
   line-height: 30px;
   color: #ffbe2d;
+  letter-spacing: 1px;
+}
+
+.BoxHeader {
+  font-family: 'Indie Flower', cursive;
+  font-size: 35px;
+  letter-spacing: 2px;
 }
 
 .DownloadLink {
   position: absolute;
   font-family: 'Montserrat', sans-serif;
   left: 27%;
-  margin-top: 50%;
+  margin-top: 52%;
   width: 200px;
   height: 23px;
   letter-spacing: 2px;
