@@ -4,6 +4,7 @@ import imgbg from '../../assets/images/me.png';
 // import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer';
 import sanityClient from '../../client';
 import BlockContent from '@sanity/block-content-to-react';
+import file from '../../assets/images/cv-izabela-krupinska.pdf';
 
 function About() {
   const [author, setAuthor] = useState(null);
@@ -40,7 +41,9 @@ function About() {
           />
         </div>
         <div className={classes.DownloadLink}>
-          <a href='/'>Download my CV</a>
+          <a href={file} download>
+            Download my CV
+          </a>
           <div className={classes.Line}>
             <hr />
           </div>
