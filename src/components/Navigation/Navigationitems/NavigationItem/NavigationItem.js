@@ -3,18 +3,18 @@ import classes from './NawigationItem.module.css';
 import { Link } from 'react-scroll';
 
 const navigationItem = (props) => (
-  <div className={classes.NavigationItem}>
+  <li className={classes.NavigationItem}>
     <Link
       activeClass={classes.active}
       to={props.id}
       spy={true}
-      smooth={true}
+      smooth='easeInOutCubic'
       offset={-100}
-      duration={1000}
+      duration={1500}
     >
       {props.children}
     </Link>
-  </div>
+  </li>
 );
 
 export default navigationItem;

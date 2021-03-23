@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './Home.module.css';
 import img from '../../assets/images/imgbg.jpeg';
 import Icon from '../UI/Icon/Icon';
+import ScrollToButton from '../UI/ScrollToButton/ScrollToButton';
 
 class Home extends Component {
   render() {
@@ -21,10 +22,15 @@ class Home extends Component {
           </div>
           <div className={classes.BoxTwo}>
             <p>
-              Welcome to my portfolio website. <br /> Let's see what we've got
-              here...
+              Welcome to my portfolio website. <br /> Let's see my projects...
             </p>
           </div>
+          <div className={classes.ScrollButton}>
+            <ScrollToButton id='projects'>
+              <span></span>
+            </ScrollToButton>
+          </div>
+
           <div className={classes.Icons}>
             <Icon iconName={'FaGithub'} link={'https://github.com/Izabela88'} />
             <Icon
