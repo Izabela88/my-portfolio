@@ -27,7 +27,7 @@ class Contact extends Component {
           </div>
           <div className={classes.ContactText}>
             <p>
-              Here is how you can reach me: <br /> izabkru88@gmail.com <br />
+              izabkru88@gmail.com <br />
               +44 7868197008
             </p>
           </div>
