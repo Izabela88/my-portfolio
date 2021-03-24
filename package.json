@@ -16,6 +16,7 @@
     "@testing-library/react": "^11.2.3",
     "@testing-library/user-event": "^12.6.0",
     "@types/yup": "^0.29.11",
+    "animate.css": "^4.1.1",
     "axios": "^0.21.1",
     "formik": "^2.2.6",
     "i": "^0.3.6",
