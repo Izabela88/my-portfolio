@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import classes from './Contact.module.css';
-import img from '../../assets/images/contact-img.jpeg';
+import img from '../../assets/images/img0.jpg';
 import axios from 'axios';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
@@ -8,8 +8,8 @@ import icon1 from '../../assets/images/phone.svg';
 import icon2 from '../../assets/images/email.svg';
 
 const Schema = Yup.object().shape({
-  name: Yup.string().required('Required'),
-  subject: Yup.string().required('Required'),
+  name: Yup.string().max(40).required('Required'),
+  subject: Yup.string().max(50).required('Required'),
   email: Yup.string().email('Invalid email!').required('Required'),
   message: Yup.string().max(600).required('Required'),
 });
@@ -17,11 +17,14 @@ const Schema = Yup.object().shape({
 class Contact extends Component {
   render() {
     return (
-      <section className={classes.Contact} id='contact'>
+      <section
+        className={classes.Contact}
+        id='contact'
+        style={{
+          backgroundImage: `url(${img})`,
+        }}
+      >
         <div className={classes.Container}>
-          <div className={classes.ContactImg}>
-            <img src={img} alt='' />
-          </div>
           <div className={classes.ContactHeader}>
             <h1>contact.</h1>
           </div>
@@ -108,8 +111,11 @@ class Contact extends Component {
                   {errors.message && touched.message ? (
                     <div className={classes.Error}>{errors.message}</div>
                   ) : null}
-                  <button className={classes.ContactBtn} type='submit'>
-                    Send Message
+                  <button
+                    className={`${classes.ContactBtn} ${classes.Effect}`}
+                    type='submit'
+                  >
+                    <span>Send Message</span>
                   </button>
                 </Form>
               </div>

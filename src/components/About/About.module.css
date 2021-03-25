@@ -33,14 +33,14 @@
 .AboutHeader {
   position: absolute;
   letter-spacing: 1px;
-  left: -19%;
-  margin-top: 14%;
+  left: -22%;
+  margin-top: 200px;
 }
 
 .AboutHeader h1 {
   transform: rotate(-90deg);
   font-family: 'Montserrat', sans-serif;
-  font-size: 135px;
+  font-size: 150px;
   color: rgb(253, 187, 45, 0.1);
 }
 
@@ -50,8 +50,8 @@
   position: absolute;
   left: 18%;
   width: 500px;
-  height: 500px;
-  margin-top: 5%;
+  height: 605px;
+  margin-top: 60px;
   line-height: 30px;
   color: #ffbe2d;
   letter-spacing: 1px;

@@ -17,13 +17,13 @@
   position: relative;
   display: flex;
   justify-content: center;
+  font-size: 128px;
 }
 
 .MainHeader h1 {
-  font-size: 187px;
   letter-spacing: 1px;
-  margin: 2% auto;
   color: rgb(253, 187, 45, 0.1);
+  margin: 10px;
 }
 
 .Items {
@@ -31,10 +31,9 @@
   /* grid-gap: 1px; */
   grid-template-columns: repeat(3, 1fr);
   align-self: center;
-  box-shadow: 0 5px 10px 0 rgb(190 137 18 / 64%);
+  box-shadow: 5px 5px 38px #c69c00;
   margin-bottom: 100px;
   margin-top: 30px;
-  cursor: pointer;
 }
 
 .Item {
