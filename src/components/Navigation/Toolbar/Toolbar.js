@@ -8,7 +8,7 @@ const toolbar = (props) => (
   <header className={classes.Toolbar}>
     <HamburgerIcon clicked={props.hamburgerIconClicked} />
     <div className={classes.Logo}>
-      <Logo />
+      <Logo id='home' />
     </div>
     <nav className={classes.DesktopOnly}>
       <NavigationItems />

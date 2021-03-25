@@ -4,7 +4,7 @@ import { Link } from 'react-scroll';
 
 const scrollToButton = (props) => (
   <div className={classes.ScrollToButton}>
-    <Link smooth='easeInOutCubic' offset={-100} duration={1000} to={props.id}>
+    <Link smooth='easeInOutCubic' offset={-100} duration={2000} to={props.id}>
       {props.children}
     </Link>
   </div>
