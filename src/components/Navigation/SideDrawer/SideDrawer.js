@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Auxiliary from '../../../hoc/Auxiliary';
 import NavigationItems from '../NavigationItems/NavigationItems';
 import classes from './SideDrawer.module.css';
-import CloseButton from './CloseButton/CloseButton';
 
 class SideDrawer extends Component {
   render() {
@@ -13,7 +12,6 @@ class SideDrawer extends Component {
     return (
       <Auxiliary>
         <div className={attachedClasses.join(' ')}>
-          <CloseButton clicked={this.props.closed} />
           <nav>
             <NavigationItems />
           </nav>

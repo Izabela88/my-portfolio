@@ -22,7 +22,8 @@ class Home extends Component {
           </div>
           <div className={classes.BoxTwo}>
             <p>
-              Welcome to my portfolio website. <br /> Let's see my projects...
+              Welcome to my portfolio website. <br /> Feel free to check my
+              projects...
             </p>
           </div>
           <div className={classes.ScrollButton}>
