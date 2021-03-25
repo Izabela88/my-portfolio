@@ -103,7 +103,8 @@ class Contact extends Component {
                   ) : null}
 
                   <Field
-                    className={classes.InputElement}
+                    as='textarea'
+                    className={`${classes.InputElement} ${classes.TextElement}`}
                     name='message'
                     type='message'
                     placeholder='Enter Message'

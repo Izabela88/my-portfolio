@@ -91,6 +91,10 @@
   color: #f7a900;
 }
 
+.TextElement {
+  height: 100px;
+}
+
 .InputElement::placeholder {
   color: #f9cf75;
   font-size: 14px;
