@@ -115,3 +115,13 @@
   transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
     rotateX(calc(var(--y) * -45deg));
 }
+
+@media (max-width: 499px) {
+  .Slides {
+    width: 100px;
+  }
+
+  .SlideContent {
+    width: 100px;
+  }
+}

@@ -39,3 +39,10 @@
     opacity: 0;
   }
 }
+
+@media (max-width: 499px) {
+  .ScrollToButton a span {
+    width: 20px;
+    height: 20px;
+  }
+}

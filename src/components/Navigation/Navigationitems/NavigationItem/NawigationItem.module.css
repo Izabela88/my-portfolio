@@ -33,13 +33,12 @@
     height: 100%;
     padding: 10px 20px;
     font-weight: bold;
-    transition-duration: 0.5s;
-
+    transition-duration: 0.3s;
   }
 
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active {
-    color: #ff4046;
+    color: #fff;
   }
 }

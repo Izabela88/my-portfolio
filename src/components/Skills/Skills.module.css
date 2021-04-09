@@ -30,3 +30,9 @@
   letter-spacing: 1px;
   color: rgb(253, 187, 45, 50%);
 }
+
+@media (max-width: 499px) {
+  .SectionHeading {
+    display: none;
+  }
+}

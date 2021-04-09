@@ -91,3 +91,30 @@
 .Line hr {
   border: 1px solid #ff4046;
 }
+
+@media (max-width: 499px) {
+  .AboutImg {
+    display: none;
+  }
+
+  .AboutHeader {
+    display: none;
+  }
+
+  .BoxText {
+    width: 200px;
+    margin: auto;
+  }
+
+  .BoxText h1 {
+    font-size: 13px;
+  }
+
+  .BoxText p {
+    font-size: 10px;
+  }
+
+  .DownloadLink {
+    display: none;
+  }
+}

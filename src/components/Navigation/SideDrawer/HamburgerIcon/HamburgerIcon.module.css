@@ -7,8 +7,8 @@
   cursor: pointer;
 }
 
-.HamburgerIcon::before,
-.HamburgerIcon::after,
+.HamburgerIcon:before,
+.HamburgerIcon:after,
 .HamburgerIcon div {
   background: #fff;
   content: '';
@@ -19,10 +19,10 @@
   transition: 0.5s;
 }
 
-.HamburgerIcon:hover::before {
+.HamburgerIcon:hover:before {
   transform: translateY(12px) rotate(135deg);
 }
-.HamburgerIcon:hover::after {
+.HamburgerIcon:hover:after {
   transform: translateY(-12px) rotate(-135deg);
 }
 .HamburgerIcon div {

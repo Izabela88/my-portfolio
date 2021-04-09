@@ -1,6 +1,6 @@
-import React from "react";
-import sanityClient from "../../../client";
-import classes from "./Carousel.module.css";
+import React from 'react';
+import sanityClient from '../../../client';
+import classes from './Carousel.module.css';
 
 function useTilt(active) {
   const ref = React.useRef(null);
@@ -50,19 +50,19 @@ const initialState = {
 };
 
 const slidesReducer = (state, event) => {
-  if (event.type === "SET_SLIDES") {
+  if (event.type === 'SET_SLIDES') {
     return {
       ...state,
       slides: event.payload,
     };
   }
-  if (event.type === "NEXT") {
+  if (event.type === 'NEXT') {
     return {
       ...state,
       slideIndex: (state.slideIndex + 1) % state.slides.length,
     };
   }
-  if (event.type === "PREV") {
+  if (event.type === 'PREV') {
     return {
       ...state,
       slideIndex:
@@ -89,7 +89,6 @@ function Slide({ slide, offset }) {
         className={classes.SlideContent}
         style={{
           backgroundImage: `url('${slide.image}')`,
-          width: '310px',
         }}
       >
         <div className={classes.SlideContentInner}>
@@ -131,7 +130,7 @@ function Carousel() {
               image: skill.mainImage.asset.url,
             };
           });
-          dispatch({ type: "SET_SLIDES", payload: values });
+          dispatch({ type: 'SET_SLIDES', payload: values });
         });
       });
   }, []);
