@@ -172,23 +172,23 @@
 
   .BoxOne {
     width: 100px;
-    margin-top: 289px;
+    margin-top: 140px;
     margin-left: 15px;
   }
 
   .BoxTwo {
-    right: -29%;
-    width: 225px;
-    height: 182px;
-    margin: 0 auto;
-    top: 91%;
+    right: -36%;
+    width: 315px;
+    height: 330px;
+    margin: -82px 0;
+    top: 78%;
     padding: 10px 10px;
   }
 
   .BoxTwo p {
-    line-height: 13px;
-    font-size: 7px;
-    margin: 54px 35px;
+    line-height: 16px;
+    font-size: 11px;
+    margin: 160px 39px;
   }
 
   .ScrollButton {

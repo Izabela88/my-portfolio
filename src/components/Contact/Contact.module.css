@@ -215,10 +215,12 @@
     height: 400px;
     left: 0;
     bottom: -300px;
+    margin: auto;
   }
 
   .InputElement {
-    height: 30px;
+    height: 40px;
+    font-size: 10px;
   }
 
   .InputElement::placeholder {
@@ -231,9 +233,12 @@
   }
 
   .ContactText {
-    width: 200px;
-    font-size: 12px;
-    padding: 0;
+    width: 270px;
+    height: auto;
+    font-size: 18px;
+    padding: 20px;
+    margin: 93px auto;
+    font-size: 18px;
   }
 
   .ContactBtn {
@@ -242,12 +247,12 @@
   }
 
   .EmailIcon {
-    left: 14px;
-    bottom: 239px;
+    left: 21px;
+    bottom: 260px;
   }
 
   .PhoneIcon {
-    left: 14px;
-    bottom: 149px;
+    left: 21px;
+    bottom: 170px;
   }
 }

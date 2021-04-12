@@ -102,12 +102,13 @@
   }
 
   .BoxText {
-    width: 200px;
-    margin: auto;
+    width: 255px;
+    margin: 25px auto;
+    height: fit-content;
   }
 
   .BoxText h1 {
-    font-size: 13px;
+    font-size: 18px;
   }
 
   .BoxText p {

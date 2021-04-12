@@ -118,10 +118,29 @@
 
 @media (max-width: 499px) {
   .Slides {
-    width: 100px;
+    width: 200px;
+  }
+
+  .Slides > button {
+    margin: -105px auto;
+    font-size: 60px;
   }
 
   .SlideContent {
-    width: 100px;
+    width: 130px;
+    margin: -320px auto;
+  }
+
+  .SlideContentInner {
+    top: 162px;
+  }
+
+  .SlideContentInner .SlideSubtitle,
+  .SlideContentInner .SlideTitle {
+    font-size: 14px;
+  }
+
+  .SlideContentInner .SlideDescription {
+    font-size: 11px;
   }
 }
