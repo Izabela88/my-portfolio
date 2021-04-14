@@ -5,8 +5,8 @@
   left: 0;
   top: 0;
   z-index: 200;
-  background-color: #dcdfea;
-  transition: transform 0.3s ease-out;
+  background-color: #ffbe2d;
+  transition: transform 0.8s ease-in-out;
   font-family: 'Montserrat', sans-serif;
 }
 
@@ -23,7 +23,7 @@
   margin-bottom: 32px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1024px) {
   .SideDrawer {
     display: none;
   }

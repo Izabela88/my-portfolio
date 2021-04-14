@@ -16,7 +16,7 @@
   .NavigationItem a:hover,
   .NavigationItem a:active,
   .NavigationItem a.active {
-    color: #181617;
+    color: #fff;
   }
 }
 
@@ -33,7 +33,7 @@
     height: 100%;
     padding: 10px 20px;
     font-weight: bold;
-    transition-duration: 0.3s;
+    transition-duration: 0.2s;
   }
 
   .NavigationItem a:hover,

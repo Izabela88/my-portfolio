@@ -118,7 +118,7 @@
 
 @media (max-width: 499px) {
   .Slides {
-    width: 200px;
+    width: 150px;
   }
 
   .Slides > button {

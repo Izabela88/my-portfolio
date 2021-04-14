@@ -10,7 +10,7 @@
   }
 }
 
-@media (min-width: 500px) {
+@media (min-width: 1024px) {
   .NavigationItems {
     margin: 0;
     padding: 0;
