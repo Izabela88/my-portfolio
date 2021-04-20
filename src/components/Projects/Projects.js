@@ -54,6 +54,7 @@ function Project() {
                     </h3>
                     <p>{project.description}</p>
                     <a
+                      className={classes.LinkStyle}
                       href={project.link}
                       target='_blank'
                       rel='noopener noreferrer'
