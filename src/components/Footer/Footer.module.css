@@ -1,0 +1,11 @@
+.MainFooter {
+  height: 80px;
+}
+
+.FooterContent {
+  display: flex;
+  justify-content: center;
+  padding: 16px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}

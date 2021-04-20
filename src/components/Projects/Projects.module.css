@@ -121,6 +121,12 @@
   color: #151515;
   font-weight: bold;
   transition-duration: 0.3s;
+  padding: 10px;
+  border: 1px solid #fff;
+}
+
+.TextWrap p {
+  margin-bottom: 30px;
 }
 
 .TextWrap a:hover {
@@ -133,6 +139,7 @@
   padding: 0 1rem;
   margin: 5px 0 0 0;
   font-family: 'Indie Flower', cursive;
+  color: #fff;
 }
 
 @media (max-width: 499px) {
