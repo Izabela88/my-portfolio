@@ -6,6 +6,7 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import icon1 from '../../assets/images/phone.svg';
 import icon2 from '../../assets/images/email.svg';
+import Fade from 'react-reveal/Fade';
 
 const Schema = Yup.object().shape({
   name: Yup.string().max(40).required('Required'),
@@ -25,9 +26,11 @@ class Contact extends Component {
         }}
       >
         <div className={classes.Container}>
-          <div className={classes.ContactHeader}>
-            <h1>contact.</h1>
-          </div>
+          <Fade duration={5000}>
+            <div className={classes.ContactHeader}>
+              <h1>contact.</h1>
+            </div>
+          </Fade>
           <div className={classes.ContactText}>
             <p>
               izabkru88@gmail.com <br />

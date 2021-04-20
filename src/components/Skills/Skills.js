@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import classes from './Skills.module.css';
 import Carousel from '../UI/Carousel/Carousel';
 import imgA from '../../assets/images/pex-1.jpg';
+import Fade from 'react-reveal/Fade';
 
 class Skills extends Component {
   render() {
@@ -14,7 +15,9 @@ class Skills extends Component {
         id='skills'
       >
         <div className={classes.SectionHeading}>
-          <h1>my skills.</h1>
+          <Fade duration={4000}>
+            <h1>my skills.</h1>
+          </Fade>
         </div>
         <Carousel />
       </section>

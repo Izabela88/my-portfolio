@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import classes from './Projects.module.css';
 import sanityClient from '../../client.js';
+import Fade from 'react-reveal/Fade';
 
 function Project() {
   const [projectData, setProjectData] = useState(null);
@@ -32,7 +33,9 @@ function Project() {
     <main className={classes.MainProjects} id='projects'>
       <section className={classes.SectionProjects}>
         <div className={classes.MainHeader}>
-          <h1>my projects.</h1>
+          <Fade duration={4000}>
+            <h1>my projects.</h1>
+          </Fade>
         </div>
 
         <section className={classes.Items}>

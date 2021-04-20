@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import classes from './About.module.css';
 import imgbg from '../../assets/images/me.png';
-// import { PDFDownloadLink, Document, Page } from '@react-pdf/renderer';
+import Fade from 'react-reveal/Fade';
+
 import sanityClient from '../../client';
 import BlockContent from '@sanity/block-content-to-react';
 import file from '../../assets/images/cv-izabela-krupinska.pdf';
@@ -27,18 +28,24 @@ function About() {
     <main className={classes.About} id='about'>
       <section className={classes.Container}>
         <div className={classes.AboutImg}>
-          <img src={imgbg} alt='' />
+          <Fade right duration={2000}>
+            <img src={imgbg} alt='' />
+          </Fade>
         </div>
-        <div className={classes.AboutHeader}>
-          <h1>about me.</h1>
-        </div>
+        <Fade duration={7000}>
+          <div className={classes.AboutHeader}>
+            <h1>about me.</h1>
+          </div>
+        </Fade>
         <div className={classes.BoxText}>
-          <h1 className={classes.BoxHeader}>Few words about myself...</h1>
-          <BlockContent
-            blocks={author.bio}
-            projectId='qntdc3lc'
-            dataset='production'
-          />
+          <Fade left duration={2000}>
+            <h1 className={classes.BoxHeader}>Few words about myself...</h1>
+            <BlockContent
+              blocks={author.bio}
+              projectId='qntdc3lc'
+              dataset='production'
+            />
+          </Fade>
         </div>
         <div className={classes.DownloadLink}>
           <a href={file} download>

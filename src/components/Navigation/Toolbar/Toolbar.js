@@ -6,7 +6,10 @@ import HamburgerIcon from '../SideDrawer/HamburgerIcon/HamburgerIcon';
 
 const toolbar = (props) => (
   <header className={classes.Toolbar}>
-    <HamburgerIcon clicked={props.hamburgerIconClicked} />
+    <HamburgerIcon
+      clicked={props.hamburgerIconClicked}
+      handleClick={props.handleClick}
+    />
     <div className={classes.Logo}>
       <Logo id='home' />
     </div>

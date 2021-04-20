@@ -3,6 +3,7 @@ import classes from './Home.module.css';
 import img from '../../assets/images/imgbg.jpeg';
 import Icon from '../UI/Icon/Icon';
 import ScrollToButton from '../UI/ScrollToButton/ScrollToButton';
+import Fade from 'react-reveal/Fade';
 
 class Home extends Component {
   render() {
@@ -13,18 +14,22 @@ class Home extends Component {
         </div>
         <section className={classes.MainText}>
           <div className={classes.BoxOne}>
-            <h1>
-              <span className={classes.Span}>Hello!</span>
-              <br />
-              I'm Izabela. <br />
-            </h1>
-            <h5>Junior Frontend Developer</h5>
+            <Fade top duration={2000}>
+              <h1>
+                <span className={classes.Span}>Hello!</span>
+                <br />
+                I'm Izabela. <br />
+              </h1>
+              <h5>Junior Frontend Developer</h5>
+            </Fade>
           </div>
           <div className={classes.BoxTwo}>
-            <p>
-              Welcome to my portfolio website. <br /> Feel free to check my
-              projects...
-            </p>
+            <Fade bottom duration={3000}>
+              <p>
+                Welcome to my portfolio website. <br /> Feel free to check my
+                projects...
+              </p>
+            </Fade>
           </div>
           <div className={classes.ScrollButton}>
             <ScrollToButton id='projects'>
