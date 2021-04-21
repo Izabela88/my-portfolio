@@ -36,3 +36,12 @@
     display: none;
   }
 }
+
+@media (max-width: 1024px) {
+  .SectionHeading {
+    top: -5%;
+  }
+  .SectionHeading h1 {
+    font-size: 145px;
+  }
+}

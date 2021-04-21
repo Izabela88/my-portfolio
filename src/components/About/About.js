@@ -28,11 +28,11 @@ function About() {
     <main className={classes.About} id='about'>
       <section className={classes.Container}>
         <div className={classes.AboutImg}>
-          <Fade right duration={2000}>
+          <Fade right duration={3000} delay={2000}>
             <img src={imgbg} alt='' />
           </Fade>
         </div>
-        <Fade duration={7000}>
+        <Fade duration={8000}>
           <div className={classes.AboutHeader}>
             <h1>about me.</h1>
           </div>

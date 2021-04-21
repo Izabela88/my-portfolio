@@ -119,3 +119,46 @@
     display: none;
   }
 }
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .AboutImg {
+    display: none;
+  }
+
+  .BoxText {
+    margin: 135px auto;
+  }
+
+  .AboutHeader {
+    left: -220px;
+    margin-top: 266px;
+  }
+
+  .AboutHeader h1 {
+    font-size: 110px;
+  }
+
+  .DownloadLink {
+    margin-top: 735px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+  .AboutImg {
+    width: 82%;
+    left: 17%;
+  }
+  .AboutHeader {
+    left: -29%;
+    margin-top: 342px;
+  }
+  .BoxText {
+    width: 550px;
+    margin-top: 228px;
+    left: 26%;
+  }
+
+  .DownloadLink {
+    margin-top: 858px;
+  }
+}

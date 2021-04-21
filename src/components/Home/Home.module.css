@@ -196,3 +196,32 @@
     bottom: -67px;
   }
 }
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .MainImage {
+    display: none;
+  }
+
+  .Icons {
+    left: -90%;
+    width: 250px;
+    bottom: 77%;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 140px;
+  }
+
+  .BoxTwo {
+    right: -36%;
+  }
+  .ScrollButton {
+    left: 170px;
+    bottom: -150px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+  .MainImage {
+    display: none;
+  }
+}

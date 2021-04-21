@@ -8,7 +8,7 @@
   z-index: 1000;
 }
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
   .HamburgerIcon {
     display: none;
   }

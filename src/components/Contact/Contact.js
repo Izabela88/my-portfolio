@@ -26,7 +26,7 @@ class Contact extends Component {
         }}
       >
         <div className={classes.Container}>
-          <Fade duration={5000}>
+          <Fade duration={3000}>
             <div className={classes.ContactHeader}>
               <h1>contact.</h1>
             </div>

@@ -14,7 +14,7 @@ class Home extends Component {
         </div>
         <section className={classes.MainText}>
           <div className={classes.BoxOne}>
-            <Fade top duration={2000}>
+            <Fade top duration={3000}>
               <h1>
                 <span className={classes.Span}>Hello!</span>
                 <br />
@@ -24,7 +24,7 @@ class Home extends Component {
             </Fade>
           </div>
           <div className={classes.BoxTwo}>
-            <Fade bottom duration={3000}>
+            <Fade bottom duration={4000}>
               <p>
                 Welcome to my portfolio website. <br /> Feel free to check my
                 projects...
@@ -42,10 +42,6 @@ class Home extends Component {
             <Icon
               iconName={'FaLinkedin'}
               link={'https://www.linkedin.com/in/izabela-krupinska-161a351a5/'}
-            />
-            <Icon
-              iconName={'FaFacebook'}
-              link={'https://www.facebook.com/izabela.krupinska.77/'}
             />
           </div>
         </section>

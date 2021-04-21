@@ -256,3 +256,56 @@
     bottom: 170px;
   }
 }
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .ContactBox {
+    left: 160px;
+    bottom: -237px;
+  }
+
+  .ContactHeader {
+    font-size: 95px;
+    left: -32%;
+  }
+
+  .ContactText {
+    bottom: 255px;
+    left: 32%;
+  }
+
+  .EmailIcon {
+    bottom: 455px;
+  }
+
+  .PhoneIcon {
+    bottom: 368px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+  .ContactBox {
+    left: 273px;
+    bottom: -435px;
+  }
+
+  .ContactText {
+    bottom: 96px;
+    left: 34%;
+  }
+
+  .EmailIcon {
+    bottom: 302px;
+    left: 31%;
+  }
+
+  .PhoneIcon {
+    bottom: 210px;
+    left: 31%;
+  }
+
+  .ContactHeader {
+    bottom: -36%;
+    font-size: 120px;
+    left: -27%;
+  }
+}
