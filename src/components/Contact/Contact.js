@@ -58,19 +58,23 @@ class Contact extends Component {
                 method: 'POST',
                 url: 'http://localhost:5000/contact',
                 data: this.state,
-              }).then((response) => {
-                if (response.data.status === 'sent') {
-                  alert('Message Sent');
-                  this.setState({
-                    name: '',
-                    subject: '',
-                    email: '',
-                    message: '',
-                  });
-                } else if (response.data.status === 'failed') {
-                  alert('Message has not been sent.');
-                }
-              });
+              })
+                .then((response) => {
+                  if (response.data.status === 'sent') {
+                    alert('Message Sent');
+                    this.setState({
+                      name: values.name,
+                      subject: values.subject,
+                      email: values.email,
+                      message: values.message,
+                    });
+                  } else if (response.data.status === 'failed') {
+                    alert('Message has not been sent.');
+                  }
+                })
+                .catch(function (error) {
+                  console.log(error);
+                });
             }}
           >
             {({ errors, touched }) => (

@@ -38,7 +38,7 @@ router.post('/contact', (req, res) => {
     from: name,
     to: 'izabeladev88@gmail.com',
     subject: 'Contact Form Message',
-    html: `<p>Name: ${name}</p> <p>Subject: ${subject}</p><p>Email: ${email}</p><p>Phone: ${phone}</p><p>Message: ${message}</p>`,
+    html: `<p>Name: ${name}</p> <p>Subject: ${subject}</p><p>Email: ${email}</p><p>Message: ${message}</p>`,
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
