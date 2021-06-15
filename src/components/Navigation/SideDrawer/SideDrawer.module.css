@@ -1,0 +1,30 @@
+.SideDrawer {
+  position: fixed;
+  width: 80%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 200;
+  background-color: #ffbe2d;
+  transition: transform 0.8s ease-in-out;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.Open {
+  transform: translateX(0);
+}
+
+.Close {
+  transform: translateX(-100%);
+}
+
+.Logo {
+  height: 11%;
+  margin-bottom: 32px;
+}
+
+@media (min-width: 1025px) {
+  .SideDrawer {
+    display: none;
+  }
+}

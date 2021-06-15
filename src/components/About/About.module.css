@@ -1,0 +1,164 @@
+.About {
+  height: 100vh;
+  width: 100%;
+  background-color: #151515;
+  z-index: 3;
+  position: relative;
+  margin: auto;
+  top: 0;
+}
+
+.Container {
+  margin: auto;
+  max-width: 1300px;
+  position: relative;
+}
+
+.AboutImg {
+  display: block;
+  height: 100vh;
+  width: 60%;
+  top: 0;
+  left: 40%;
+  opacity: 0.5;
+  position: absolute;
+}
+
+.AboutImg img {
+  height: 100%;
+  width: 100%;
+  filter: drop-shadow(-10px -13px 50px #585858);
+}
+
+.AboutHeader {
+  position: absolute;
+  letter-spacing: 1px;
+  left: -22%;
+  margin-top: 200px;
+}
+
+.AboutHeader h1 {
+  transform: rotate(-90deg);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 150px;
+  color: rgb(253, 187, 45, 0.1);
+}
+
+.BoxText {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 15px;
+  position: absolute;
+  left: 18%;
+  width: 500px;
+  height: 605px;
+  margin-top: 60px;
+  line-height: 30px;
+  color: #ffbe2d;
+  letter-spacing: 1px;
+}
+
+.BoxHeader {
+  font-family: 'Indie Flower', cursive;
+  font-size: 35px;
+  letter-spacing: 2px;
+}
+
+.DownloadLink {
+  position: absolute;
+  font-family: 'Montserrat', sans-serif;
+  left: 27%;
+  margin-top: 670px;
+  width: 200px;
+  height: 23px;
+  letter-spacing: 2px;
+}
+
+.DownloadLink a {
+  color: #ff4046;
+  text-decoration: none;
+  font-family: 'Indie Flower', cursive;
+  font-size: 24px;
+  transition-duration: 0.4s;
+}
+.DownloadLink a:hover {
+  color: #ffbe2d;
+}
+
+.Line {
+  width: 500px;
+}
+
+.Line hr {
+  border: 1px solid #ff4046;
+}
+
+@media (max-width: 499px) {
+  .AboutImg {
+    display: none;
+  }
+
+  .AboutHeader {
+    display: none;
+  }
+
+  .BoxText {
+    width: 255px;
+    margin: 25px auto;
+    height: fit-content;
+  }
+
+  .BoxText h1 {
+    font-size: 18px;
+  }
+
+  .BoxText p {
+    font-size: 10px;
+  }
+
+  .DownloadLink {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .AboutImg {
+    display: none;
+  }
+
+  .BoxText {
+    margin: 135px auto;
+  }
+
+  .AboutHeader {
+    left: -220px;
+    margin-top: 266px;
+  }
+
+  .AboutHeader h1 {
+    font-size: 110px;
+  }
+
+  .DownloadLink {
+    margin-top: 735px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+  .AboutImg {
+    width: 89%;
+    left: 8%;
+  }
+  .AboutHeader {
+    left: -29%;
+    margin-top: 342px;
+  }
+  .BoxText {
+    width: 550px;
+    margin-top: 228px;
+    left: 26%;
+  }
+
+  .DownloadLink {
+    margin-top: 858px;
+  }
+}

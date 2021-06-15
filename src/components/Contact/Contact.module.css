@@ -1,0 +1,311 @@
+.Contact {
+  height: 100vh;
+  width: 100%;
+  background-color: #ffbe2d;
+  z-index: 3;
+  position: relative;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+  z-index: 3;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.Container {
+  margin: auto;
+  max-width: 1300px;
+  position: relative;
+  max-height: 100vh;
+}
+
+.ContactHeader {
+  position: absolute;
+  letter-spacing: 1px;
+  left: -250px;
+  bottom: -30px;
+  font-size: 113px;
+}
+
+.ContactHeader h1 {
+  transform: rotate(-90deg);
+  font-family: 'Montserrat', sans-serif;
+  color: rgb(253, 187, 45, 0.2);
+}
+
+.ContactText {
+  position: absolute;
+  bottom: 20px;
+  color: #f9cf75;
+  padding: 0 46px;
+  left: 18%;
+  letter-spacing: 2px;
+  width: 440px;
+  height: 300px;
+  line-height: 90px;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.ContactBox {
+  left: 50%;
+  bottom: -75px;
+  position: relative;
+  width: 500px;
+  height: 600px;
+  padding: 15px;
+  box-sizing: border-box;
+}
+
+.ContactQuestion {
+  font-family: 'Indie Flower', cursive;
+  color: #f7a900;
+  font-size: 48px;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 5px;
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+.TextFields {
+  display: grid;
+  width: 560px;
+  height: auto;
+}
+
+.InputElement {
+  margin: 20px 0;
+  outline: none;
+  font-family: 'Montserrat', sans-serif;
+  background-color: transparent;
+  font: inherit;
+  padding: 5px 5px;
+  display: block;
+  width: 100%;
+  border: none;
+  cursor: text;
+  border: 1px solid #f9cf75;
+  height: 55px;
+  position: relative;
+  color: #f7a900;
+}
+
+.TextElement {
+  height: 100px;
+}
+
+.InputElement::placeholder {
+  color: #f9cf75;
+  font-size: 14px;
+}
+
+.InputElement:focus {
+  outline: none;
+  background-color: #000;
+}
+
+.Error {
+  color: #ff4046;
+  font-size: 10px;
+  position: absolute;
+  margin-top: -16px;
+}
+
+.ContactBtn {
+  letter-spacing: 0.1em;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 45px;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  width: 100%;
+  width: 472px;
+  height: 55px;
+  cursor: pointer;
+}
+
+.ContactBtn:hover {
+  box-shadow: 0px 0px 0px 4px #eee inset;
+}
+
+.Effect {
+  color: #f7a900;
+  border: 4px solid #000;
+  box-shadow: 0px 0px 0px 1px #000 inset;
+  background-color: #000;
+  overflow: hidden;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.Effect:hover {
+  border: 4px solid #666;
+  background-color: #fff;
+  box-shadow: 0px 0px 0px 4px #eee inset;
+}
+
+.Effect:hover span {
+  letter-spacing: 0.13em;
+  color: #000;
+}
+
+.Effect:after {
+  background: #fff;
+  border: 0px solid #000;
+  content: '';
+  height: 155px;
+  left: -75px;
+  opacity: 0.8;
+  position: absolute;
+  top: -50px;
+  -webkit-transform: rotate(35deg);
+  transform: rotate(35deg);
+  width: 50px;
+  transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1); /*easeOutCirc*/
+  z-index: 1;
+}
+
+.Effect:hover:after {
+  background: #fff;
+  border: 20px solid #000;
+  opacity: 0;
+  left: 120%;
+  -webkit-transform: rotate(40deg);
+  transform: rotate(40deg);
+}
+
+.PhoneIcon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f7a900;
+  bottom: 136px;
+  padding: 10px 10px;
+  border-radius: 50%;
+  left: 210px;
+  box-shadow: 5px 5px 38px #c69c00;
+}
+
+.EmailIcon {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #f7a900;
+  padding: 10px 10px;
+  border-radius: 50%;
+  left: 210px;
+  bottom: 226px;
+  box-shadow: 5px 5px 38px #c69c00;
+}
+
+@media (max-width: 499px) {
+  .ContactHeader {
+    display: none;
+  }
+
+  .ContactBox {
+    width: 300px;
+    height: 400px;
+    left: 0;
+    bottom: -300px;
+    margin: auto;
+  }
+
+  .InputElement {
+    height: 40px;
+    font-size: 10px;
+  }
+
+  .InputElement::placeholder {
+    color: #f9cf75;
+    font-size: 10px;
+  }
+
+  .ContactQuestion {
+    font-size: 25px;
+  }
+
+  .ContactText {
+    width: 270px;
+    height: auto;
+    font-size: 18px;
+    padding: 20px;
+    margin: 93px auto;
+    font-size: 18px;
+  }
+
+  .ContactBtn {
+    width: 270px;
+    font-size: 12px;
+  }
+
+  .EmailIcon {
+    left: 21px;
+    bottom: 260px;
+  }
+
+  .PhoneIcon {
+    left: 21px;
+    bottom: 170px;
+  }
+}
+
+@media only screen and (max-width: 768px) and (min-width: 500px) {
+  .ContactBox {
+    left: 160px;
+    bottom: -237px;
+  }
+
+  .ContactHeader {
+    font-size: 95px;
+    left: -32%;
+  }
+
+  .ContactText {
+    bottom: 255px;
+    left: 32%;
+  }
+
+  .EmailIcon {
+    bottom: 455px;
+  }
+
+  .PhoneIcon {
+    bottom: 368px;
+  }
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 770px) {
+  .ContactBox {
+    left: 273px;
+    bottom: -435px;
+  }
+
+  .ContactText {
+    bottom: 96px;
+    left: 34%;
+  }
+
+  .EmailIcon {
+    bottom: 302px;
+    left: 31%;
+  }
+
+  .PhoneIcon {
+    bottom: 210px;
+    left: 31%;
+  }
+
+  .ContactHeader {
+    bottom: -36%;
+    font-size: 120px;
+    left: -27%;
+  }
+}

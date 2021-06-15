@@ -1,0 +1,31 @@
+.Toolbar {
+  /* height: 100px; */
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #ffbe2d;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 90;
+  box-shadow: 0px 2px 14px 0px #181617;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 1px;
+}
+
+.Toolbar nav {
+  height: 70%;
+}
+
+.Logo {
+  height: 80%;
+}
+
+@media (max-width: 1024px) {
+  .DesktopOnly {
+    display: none;
+  }
+}

@@ -1,0 +1,47 @@
+.Skills {
+  position: relative;
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  font-size: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.SectionHeading {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  margin: auto;
+  width: 1000px;
+  top: -15%;
+}
+
+.SectionHeading h1 {
+  font-size: 187px;
+  letter-spacing: 1px;
+  color: rgb(253, 187, 45, 50%);
+}
+
+@media (max-width: 499px) {
+  .SectionHeading {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .SectionHeading {
+    top: -5%;
+  }
+  .SectionHeading h1 {
+    font-size: 145px;
+  }
+}

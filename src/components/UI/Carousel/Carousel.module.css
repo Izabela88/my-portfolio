@@ -1,0 +1,146 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  position: relative;
+}
+
+.Slides {
+  display: grid;
+}
+
+.Slides > .Slide {
+  grid-area: 1/-1;
+}
+
+.Slides > button {
+  margin-top: 160px;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: transparent;
+  border: none;
+  color: #ffbe2d;
+  position: absolute;
+  font-size: 128px;
+  width: 70px;
+  height: 70px;
+  top: -25%;
+  transition: opacity 0.3s;
+  opacity: 1;
+  z-index: 5;
+  cursor: pointer;
+}
+.Slides > button:hover {
+  opacity: 0.7;
+}
+.Slides > button:focus {
+  outline: none;
+}
+.Slides > button:first-child {
+  left: -50%;
+}
+.Slides > button:last-child {
+  right: -50%;
+}
+
+.SlideContent {
+  margin-top: -15%;
+  width: 300px;
+  height: 40vh;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transition: transform 0.6s ease-in-out;
+  opacity: 0.1;
+  display: grid;
+  align-content: center;
+  transform-style: preserve-3d;
+  transform: perspective(1000px) translateX(calc(100% * var(--offset)))
+    rotateY(calc(-45deg * var(--dir)));
+}
+
+.SlideContentInner {
+  transform-style: preserve-3d;
+  transform: translateZ(60px);
+  transition: opacity 0.3s linear;
+  text-shadow: 0 6px 16px rgb(255 190 45 / 48%);
+  opacity: 0;
+  color: #ffbe2d;
+  top: 220px;
+}
+
+.SlideContentInner .SlideSubtitle,
+.SlideContentInner .SlideTitle {
+  font-size: 25px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.SlideContentInner .SlideSubtitle::before {
+  content: '— ';
+}
+
+.SlideContentInner .SlideDescription {
+  margin: 20px 0;
+  font-size: 21px;
+  letter-spacing: 2px;
+  font-family: 'Indie Flower', cursive;
+}
+
+.Slide[data-active] {
+  z-index: 2;
+  pointer-events: auto;
+}
+
+.Slide[data-active] .SlideBackground {
+  opacity: 0.2;
+  transform: none;
+}
+
+.Slide[data-active] .SlideContentInner {
+  opacity: 1;
+}
+
+.Slide[data-active] .SlideContent {
+  --x: calc(var(--px) - 0.5);
+  --y: calc(var(--py) - 0.5);
+  opacity: 1;
+  transform: perspective(1000px);
+}
+
+.Slide[data-active] .SlideContent:hover {
+  transition: none;
+  transform: perspective(1000px) rotateY(calc(var(--x) * 45deg))
+    rotateX(calc(var(--y) * -45deg));
+}
+
+@media (max-width: 499px) {
+  .Slides {
+    width: 150px;
+  }
+
+  .Slides > button {
+    margin: -105px auto;
+    font-size: 60px;
+  }
+
+  .SlideContent {
+    width: 130px;
+    margin: -320px auto;
+  }
+
+  .SlideContentInner {
+    top: 162px;
+  }
+
+  .SlideContentInner .SlideSubtitle,
+  .SlideContentInner .SlideTitle {
+    font-size: 14px;
+  }
+
+  .SlideContentInner .SlideDescription {
+    font-size: 11px;
+  }
+}
