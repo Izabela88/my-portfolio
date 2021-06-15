@@ -40,11 +40,7 @@ function About() {
         <div className={classes.BoxText}>
           <Fade left duration={2000}>
             <h1 className={classes.BoxHeader}>Few words about myself...</h1>
-            <BlockContent
-              blocks={author.bio}
-              projectId='qntdc3lc'
-              dataset='production'
-            />
+            <BlockContent blocks={author.bio} />
           </Fade>
         </div>
         <div className={classes.DownloadLink}>

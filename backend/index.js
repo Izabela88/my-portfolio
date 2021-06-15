@@ -1,10 +1,8 @@
-require('dotenv').config();
 const express = require('express');
 const router = express.Router();
 const cors = require('cors');
 const nodemailer = require('nodemailer');
 const creds = require('./config');
-
 const app = express();
 app.use(cors());
 app.use(express.json());
@@ -17,6 +15,9 @@ const contactEmail = nodemailer.createTransport({
   auth: {
     user: creds.USER,
     pass: creds.PASS,
+  },
+  tls: {
+    rejectUnauthorized: false,
   },
 });
 
@@ -32,11 +33,10 @@ router.post('/contact', (req, res) => {
   const name = req.body.name;
   const subject = req.body.subject;
   const email = req.body.email;
-  const phone = req.body.phone;
   const message = req.body.message;
   const mail = {
     from: name,
-    to: creds.USER,
+    to: 'izabeladev88@gmail.com',
     subject: 'Contact Form Message',
     html: `<p>Name: ${name}</p> <p>Subject: ${subject}</p><p>Email: ${email}</p><p>Phone: ${phone}</p><p>Message: ${message}</p>`,
   };
