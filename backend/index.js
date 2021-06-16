@@ -42,9 +42,9 @@ router.post('/contact', (req, res) => {
   };
   contactEmail.sendMail(mail, (error) => {
     if (error) {
-      res.json({ status: 'failed' });
+      res.json({ status: 'fail' });
     } else {
-      res.json({ status: 'sent' });
+      res.json({ status: 'success' });
     }
   });
 });
