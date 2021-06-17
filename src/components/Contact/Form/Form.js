@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import classes from './Form.module.css';
 import Modal from '../../UI/Modal/Modal';
 import { useForm } from 'react-hook-form';
+import gif from '../../../assets/images/gif8.gif';
 
 export default function ContactForm(props) {
   const [name, setName] = useState('');
@@ -51,6 +52,9 @@ export default function ContactForm(props) {
               Thank you for your message! :)
               <br /> I will contact you as soon as possible!
             </p>
+            <div className={classes.image}>
+              <img src={gif} alt='' />
+            </div>
           </div>
         </Modal>
       )}
