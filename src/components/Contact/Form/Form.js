@@ -1,24 +1,28 @@
 import React, { useState } from 'react';
 import classes from './Form.module.css';
 import Modal from '../../UI/Modal/Modal';
-import useModal from '../../UI/Modal/useModal';
 import { useForm } from 'react-hook-form';
 
-export default function ContactForm() {
-  const { isShowing, toggle } = useModal();
-  const [show, setShow] = useState(false);
+export default function ContactForm(props) {
   const [name, setName] = useState('');
   const [subject, setSubject] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
-  const [modal, setModal] = useState('');
+  const [showModal, setShowModal] = useState(false);
+
+  const showModalHandler = () => {
+    setShowModal(true);
+  };
+
+  const hideModalHandler = () => {
+    setShowModal(false);
+  };
+
   const {
     register,
     handleSubmit,
     formState: { errors, isDirty },
   } = useForm();
-
-  const handleClose = () => setShow(false);
 
   const submitRequestSuccess = async (data, e) => {
     // console.log('submit request executed');
@@ -32,14 +36,7 @@ export default function ContactForm() {
       body: JSON.stringify(data),
     });
     if (response.status === 200) {
-      setModal(
-        <Modal
-          isShowing={isShowing}
-          hide={toggle}
-          show={show}
-          onHide={handleClose}
-        />
-      );
+      showModalHandler();
     } else {
       alert('Message not sent!');
     }
@@ -47,7 +44,16 @@ export default function ContactForm() {
 
   return (
     <form onSubmit={handleSubmit(submitRequestSuccess)}>
-      {modal}
+      {showModal && (
+        <Modal onClose={hideModalHandler}>
+          <div className={classes.message}>
+            <p>
+              Thank you for your message! :)
+              <br /> I will contact you as soon as possible!
+            </p>
+          </div>
+        </Modal>
+      )}
       <div className={classes.ContactBox}>
         <div className={classes.ContactQuestion}>
           <p>Any questions?</p>
@@ -127,6 +133,7 @@ export default function ContactForm() {
         )}
 
         <button
+          onClick={props.onClick}
           disabled={!isDirty}
           className={`${classes.ContactBtn} ${classes.Effect}`}
           type='submit'

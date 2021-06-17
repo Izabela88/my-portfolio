@@ -34,6 +34,7 @@ function Contact() {
         <div className={classes.PhoneIcon}>
           <img src={icon1} alt='' />
         </div>
+
         <Form />
       </div>
     </section>
