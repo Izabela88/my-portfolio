@@ -26,6 +26,7 @@ export default function ContactForm(props) {
   } = useForm();
 
   const submitRequestSuccess = async (data, e) => {
+    e.preventDefault();
     // console.log('submit request executed');
 
     // console.log(data);
